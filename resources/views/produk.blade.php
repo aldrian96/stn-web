@@ -3,11 +3,15 @@
 @section('title', 'PT STN | Produk Kami')
 
 @section('content')
-    <div class="py-8 bg-gray-100">
+    <div class="py-12 bg-gray-100">
         <div class="w-full md:w-11/12 lg:w-9/12 mx-auto">
             <!-- Section Title -->
             <div class="text-center mb-4 bg-white p-6 rounded-lg shadow-sm">
-                <h1 class="text-4xl font-bold text-gray-800">Produk Kami "Backgorund di IG"</h1>
+                <h1 class="text-4xl font-bold text-gray-800">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Produk Kami
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </h1>
                 <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
                 <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
                     Temukan berbagai produk unggulan kami yang dirancang untuk memenuhi kebutuhan Anda.
@@ -59,124 +63,90 @@
                 </div>
             </div>
 
-
-            <!-- Product Grid Wrapper -->
+            <!-- Product -->
             <div class="bg-white shadow-sm p-6 sm:p-8 rounded-lg">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <!-- Product Item -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    {{-- Produk --}}
                     <div
-                        class="bg-white p-6 shadow-md rounded-lg border border-gray-200 transition-transform duration-300 ease-in-out hover:scale-105">
-                        <img src="/img/product-3.png" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Produk 1</h3>
-                        <hr class="border-t-2 border-gray-100 my-2">
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Deskripsi singkat tentang produk ini yang
-                            menjelaskan fitur dan manfaatnya.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-lg font-bold text-green-600">Rp 250,000</span>
-                            <a href="#" class="inline-block text-green-500 font-semibold hover:underline">Lihat
-                                Detail</a>
+                        class="product-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg">
+                        <div class="relative">
+                            <img src="/img/product-3.png" alt="Product Name" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                                Sale</div>
+                        </div>
+                        <hr>
+
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Nama Produk</h3>
+                            <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk ini.</p>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-lg font-bold text-gray-800">Rp 249.000</span>
+                                    <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span>
+                                </div>
+                                <button
+                                    class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">
+                                    {{-- <i class="fa-solid fa-cart-shopping"></i> --}}
+                                    Beli Sekarang
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <!-- Product Item -->
+                    {{-- Produk --}}
                     <div
-                        class="bg-white p-6 shadow-md rounded-lg border border-gray-200 transition-transform duration-300 ease-in-out hover:scale-105">
-                        <img src="/img/product-3.png" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Produk 1</h3>
-                        <hr class="border-t-2 border-gray-100 my-2">
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Deskripsi singkat tentang produk ini yang
-                            menjelaskan fitur dan manfaatnya.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-lg font-bold text-green-600">Rp 250,000</span>
-                            <a href="#" class="inline-block text-green-500 font-semibold hover:underline">Lihat
-                                Detail</a>
+                        class="product-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg">
+                        <div class="relative">
+                            <img src="/img/product-3.png" alt="Product Name" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                                Sale</div>
+                        </div>
+                        <hr>
+
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Nama Produk</h3>
+                            <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk ini.</p>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-lg font-bold text-gray-800">Rp 249.000</span>
+                                    <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span>
+                                </div>
+                                <button
+                                    class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">
+                                    {{-- <i class="fa-solid fa-cart-shopping"></i> --}}
+                                    Beli Sekarang
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <!-- Product Item -->
+                    {{-- Produk --}}
                     <div
-                        class="bg-white p-6 shadow-md rounded-lg border border-gray-200 transition-transform duration-300 ease-in-out hover:scale-105">
-                        <img src="/img/product-3.png" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Produk 1</h3>
-                        <hr class="border-t-2 border-gray-100 my-2">
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Deskripsi singkat tentang produk ini yang
-                            menjelaskan fitur dan manfaatnya.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-lg font-bold text-green-600">Rp 250,000</span>
-                            <a href="#" class="inline-block text-green-500 font-semibold hover:underline">Lihat
-                                Detail</a>
+                        class="product-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg">
+                        <div class="relative">
+                            <img src="/img/product-3.png" alt="Product Name" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                                Sale</div>
                         </div>
-                    </div>
-                    <!-- Product Item -->
-                    <div
-                        class="bg-white p-6 shadow-md rounded-lg border border-gray-200 transition-transform duration-300 ease-in-out hover:scale-105">
-                        <img src="/img/product-3.png" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Produk 1</h3>
-                        <hr class="border-t-2 border-gray-100 my-2">
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Deskripsi singkat tentang produk ini yang
-                            menjelaskan fitur dan manfaatnya.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-lg font-bold text-green-600">Rp 250,000</span>
-                            <a href="#" class="inline-block text-green-500 font-semibold hover:underline">Lihat
-                                Detail</a>
-                        </div>
-                    </div>
-                    <!-- Product Item -->
-                    <div
-                        class="bg-white p-6 shadow-md rounded-lg border border-gray-200 transition-transform duration-300 ease-in-out hover:scale-105">
-                        <img src="/img/product-3.png" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Produk 1</h3>
-                        <hr class="border-t-2 border-gray-100 my-2">
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Deskripsi singkat tentang produk ini yang
-                            menjelaskan fitur dan manfaatnya.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-lg font-bold text-green-600">Rp 250,000</span>
-                            <a href="#" class="inline-block text-green-500 font-semibold hover:underline">Lihat
-                                Detail</a>
-                        </div>
-                    </div>
-                    <!-- Product Item -->
-                    <div
-                        class="bg-white p-6 shadow-md rounded-lg border border-gray-200 transition-transform duration-300 ease-in-out hover:scale-105">
-                        <img src="/img/product-3.png" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Produk 1</h3>
-                        <hr class="border-t-2 border-gray-100 my-2">
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Deskripsi singkat tentang produk ini yang
-                            menjelaskan fitur dan manfaatnya.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-lg font-bold text-green-600">Rp 250,000</span>
-                            <a href="#" class="inline-block text-green-500 font-semibold hover:underline">Lihat
-                                Detail</a>
-                        </div>
-                    </div>
-                    <!-- Product Item -->
-                    <div
-                        class="bg-white p-6 shadow-md rounded-lg border border-gray-200 transition-transform duration-300 ease-in-out hover:scale-105">
-                        <img src="/img/product-3.png" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Produk 1</h3>
-                        <hr class="border-t-2 border-gray-100 my-2">
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Deskripsi singkat tentang produk ini yang
-                            menjelaskan fitur dan manfaatnya.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-lg font-bold text-green-600">Rp 250,000</span>
-                            <a href="#" class="inline-block text-green-500 font-semibold hover:underline">Lihat
-                                Detail</a>
-                        </div>
-                    </div>
-                    <!-- Product Item -->
-                    <div
-                        class="bg-white p-6 shadow-md rounded-lg border border-gray-200 transition-transform duration-300 ease-in-out hover:scale-105">
-                        <img src="/img/product-3.png" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Produk 1</h3>
-                        <hr class="border-t-2 border-gray-100 my-2">
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">Deskripsi singkat tentang produk ini yang
-                            menjelaskan fitur dan manfaatnya.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-lg font-bold text-green-600">Rp 250,000</span>
-                            <a href="#" class="inline-block text-green-500 font-semibold hover:underline">Lihat
-                                Detail</a>
+                        <hr>
+
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Nama Produk</h3>
+                            <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk ini.</p>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-lg font-bold text-gray-800">Rp 249.000</span>
+                                    <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span>
+                                </div>
+                                <button
+                                    class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">
+                                    {{-- <i class="fa-solid fa-cart-shopping"></i> --}}
+                                    Beli Sekarang
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Pagination -->
             <div class="mt-8 flex justify-center">
