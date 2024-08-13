@@ -31,10 +31,10 @@
                             cerobong untuk hasil yang optimal. Ubah residu organik menjadi media tanam dan bahan campuran
                         </p>
                         <div class="flex flex-row mt-6 space-x-4">
-                            <img class="w-6 h-6" src="/img/Instagram.svg" alt="Instagram" />
-                            <img class="w-6 h-6" src="/img/Github.svg" alt="GitHub" />
-                            <img class="w-6 h-6" src="/img/Twitter.svg" alt="Twitter" />
-                            <img class="w-6 h-6" src="/img/Linkedin.svg" alt="LinkedIn" />
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
                         </div>
                     </div>
                 </div>
@@ -66,10 +66,10 @@
                             laudantium suscipit recusandae sed fugiat ipsum.
                         </p>
                         <div class="flex flex-row mt-6 space-x-4 justify-end">
-                            <img class="w-6 h-6" src="/img/Instagram.svg" alt="Instagram" />
-                            <img class="w-6 h-6" src="/img/Github.svg" alt="GitHub" />
-                            <img class="w-6 h-6" src="/img/Twitter.svg" alt="Twitter" />
-                            <img class="w-6 h-6" src="/img/Linkedin.svg" alt="LinkedIn" />
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
                         </div>
                     </div>
                 </div>
@@ -102,10 +102,10 @@
                             accusamus.
                         </p>
                         <div class="flex flex-row mt-6 space-x-4">
-                            <img class="w-6 h-6" src="/img/Instagram.svg" alt="Instagram" />
-                            <img class="w-6 h-6" src="/img/Github.svg" alt="GitHub" />
-                            <img class="w-6 h-6" src="/img/Twitter.svg" alt="Twitter" />
-                            <img class="w-6 h-6" src="/img/Linkedin.svg" alt="LinkedIn" />
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
                         </div>
                     </div>
                 </div>
@@ -137,10 +137,10 @@
                             accusamus..
                         </p>
                         <div class="flex flex-row mt-6 space-x-4 justify-end">
-                            <img class="w-6 h-6" src="/img/Instagram.svg" alt="Instagram" />
-                            <img class="w-6 h-6" src="/img/Github.svg" alt="GitHub" />
-                            <img class="w-6 h-6" src="/img/Twitter.svg" alt="Twitter" />
-                            <img class="w-6 h-6" src="/img/Linkedin.svg" alt="LinkedIn" />
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
                         </div>
                     </div>
                 </div>
@@ -454,8 +454,51 @@
         </div>
     </div>
 
+    {{-- Sponsor --}}
+    <div class="py-20 bg-gray-100">
+        <div class="w-full md:w-11/12 lg:w-9/12 mx-auto">
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Sponsor Kami</h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Kami didukung oleh perusahaan-perusahaan ternama yang berkomitmen untuk bekerja sama dengan kami.
+                </p>
+            </div>
+
+            <!-- Sponsor Logos -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <!-- Sponsor Logo 1 -->
+                <div class="flex justify-center items-center">
+                    <img src="/img/oriented.png" alt="Sponsor 1"
+                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+                <!-- Sponsor Logo 2 -->
+                <div class="flex justify-center items-center">
+                    <img src="/img/environmental.png" alt="Sponsor 2"
+                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+                <!-- Sponsor Logo 3 -->
+                <div class="flex justify-center items-center">
+                    <img src="/img/KMH.png" alt="Sponsor 3"
+                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+                <!-- Sponsor Logo 4 -->
+                <div class="flex justify-center items-center">
+                    <img src="/img/eco-friendly.png" alt="Sponsor 4"
+                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+                <!-- Sponsor Logo 5 -->
+                <div class="flex justify-center items-center">
+                    <img src="/img/telkom.png" alt="Sponsor 5"
+                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{-- Contact Us --}}
-    <div id="kontak" class="py-16 pt-28 bg-gray-100">
+    <div id="kontak" class="py-16 pt-28 bg-gray-50">
         <div class="w-10/12 md:w-8/12 mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-800">Hubungi Kami</h2>
