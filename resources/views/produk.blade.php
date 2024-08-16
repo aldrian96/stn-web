@@ -86,8 +86,8 @@
                                 </div>
                                 <button
                                     class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">
-                                    {{-- <i class="fa-solid fa-cart-shopping"></i> --}}
-                                    Beli Sekarang
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Beli
                                 </button>
                             </div>
                         </div>
@@ -112,8 +112,8 @@
                                 </div>
                                 <button
                                     class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">
-                                    {{-- <i class="fa-solid fa-cart-shopping"></i> --}}
-                                    Beli Sekarang
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Beli
                                 </button>
                             </div>
                         </div>
@@ -138,8 +138,8 @@
                                 </div>
                                 <button
                                     class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">
-                                    {{-- <i class="fa-solid fa-cart-shopping"></i> --}}
-                                    Beli Sekarang
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Beli
                                 </button>
                             </div>
                         </div>
