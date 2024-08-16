@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('home');
@@ -10,10 +11,18 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/dashboard/menu1', function () {
+    return view('dashboard.menu1');
+})->name('dashboard.menu1');
 
+Route::get('/dashboard/menu2', function () {
+    return view('dashboard.menu2');
+})->name('dashboard.menu2');
+
+Route::post('/logout', function () {
+    Auth::logout();
+    return redirect('/');
+})->name('logout');
 
 Route::get('/tentang-kami', function () {
     return view('about');

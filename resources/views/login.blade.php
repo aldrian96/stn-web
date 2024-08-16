@@ -48,7 +48,9 @@
                 <button type="submit" class="w-full bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">Login</button>
             </div>
         </form>
-        <a href="{{ route('dashboard') }}" class="flex justify-center text-sm text-green-600 hover:underline">Masuk Dashboard</a>
+        <a href="{{ route('dashboard.menu1') }}" class="flex justify-center text-sm text-green-600 hover:underline">Masuk Dashboard</a>
+
+        <a href="{{ route('home') }}" class="flex justify-center text-sm text-green-600 hover:underline">Kembali</a>
     </div>
 </body>
 </html>
