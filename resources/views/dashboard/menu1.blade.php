@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="bg-white rounded-lg shadow-md p-6">
-    <h2 class="text-2xl font-bold mb-4">Dashboard - Data Table</h2>
+    <h2 class="text-2xl font-bold mb-4">Dashboard - Permintaan Brosur</h2>
     
     <!-- Search and Filter -->
     <div class="mb-4 flex justify-between items-center">

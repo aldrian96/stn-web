@@ -39,12 +39,12 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li class="mb-2">
+                {{-- <li class="mb-2">
                     <a href="{{ route('dashboard.menu2') }}" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4 rounded-lg transition-colors duration-200 {{ request()->routeIs('dashboard.menu2') ? 'bg-gray-300 text-gray-800 shadow' : '' }}">
                         <i class="fas fa-list fa-lg mr-3"></i>
                         <span>Produk</span>
                     </a>
-                </li>
+                </li> --}}
                 <!-- Add more menu items here -->
             </ul>
         </div>

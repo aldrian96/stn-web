@@ -13,8 +13,8 @@
     <div class="bg-green-600 text-white py-2">
         <div class="w-11/12 md:w-9/12 mx-auto text-center">
             <p class="text-sm md:text-base">
-                📢 Don't miss our upcoming event on <strong>August 20th, 2024</strong>! <a href="#event"
-                    class="underline hover:text-gray-200">Learn More</a>
+                📢 Jangan lewatkan event kami yang akan datang pada <strong>20 Agustus 2024!</strong>! <a href="#event"
+                    class="underline hover:text-gray-200">Pelajari lebih lanjut</a>
             </p>
         </div>
     </div>
@@ -87,7 +87,7 @@
 
                 </div>
 
-                <button
+                <a href="{{ route('brosur') }}"
                     class="w-full md:w-auto bg-white text-green-600 font-semibold py-2 px-4 border border-green-600 rounded hover:bg-green-600 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 flex items-center">
                     <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,7 @@
                             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                     Minta Brosur
-                </button>
+                </a>
             </div>
         </nav>
     </header>

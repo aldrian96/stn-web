@@ -24,6 +24,10 @@ Route::post('/logout', function () {
     return redirect('/');
 })->name('logout');
 
+Route::get('/minta-brosur', function () {
+    return view('brosur');
+})->name('brosur');
+
 Route::get('/tentang-kami', function () {
     return view('about');
 })->name('about');
