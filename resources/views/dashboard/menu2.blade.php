@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="bg-white rounded-lg shadow-md p-6">
-    <h2 class="text-2xl font-bold mb-4">Dashboard - Data Table</h2>
+    <h2 class="text-2xl font-bold mb-4">Produk - Data Table</h2>
     
     <!-- Search and Filter -->
     <div class="mb-4 flex justify-between items-center">
@@ -35,16 +35,6 @@
                     <td class="px-6 py-4"><a href="#" class="text-green-600 hover:underline">Unduh Berkas</a></td>
                     <td class="px-6 py-4">
                         <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300">Terima</button>
-                    </td>
-                </tr>
-                <!-- Row 2 -->
-                <tr class="border-b">
-                    <td class="px-6 py-4">08123456789</td>
-                    <td class="px-6 py-4">John Doe</td>
-                    <td class="px-6 py-4">john@example.com</td>
-                    <td class="px-6 py-4"><a href="#" class="text-green-600 hover:underline">Unduh Berkas</a></td>
-                    <td class="px-6 py-4">
-                        <button class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Diterima</button>
                     </td>
                 </tr>
                 <!-- Add more rows as needed -->

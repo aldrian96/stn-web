@@ -47,9 +47,7 @@
             <!-- Maps -->
             <div
                 class="relative h-100 rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out hover:shadow-xl">
-                <iframe class="w-full h-full border-none"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126877.22866386898!2d106.68943106397495!3d-6.229728947582249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14f5c8b6b79%3A0x104f03e9b82357b3!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1622743760341!5m2!1sen!2sus"
-                    allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="w-full h-full border-none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126877.22866386898!2d107.1645576!3d-6.3144784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699bfdfe53c2bb%3A0xd4f5ed1486bda164!2sPT.+SARANA+TUNAS+NIAGA!5e0!3m2!1sen!2sid!4v1699556147967!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
