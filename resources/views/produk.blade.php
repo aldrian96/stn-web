@@ -81,12 +81,12 @@
                             <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk ini.</p>
                             <div class="flex justify-between items-center">
                                 <div>
-                                    <span class="text-lg font-bold text-gray-800">Rp 249.000</span>
-                                    <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span>
+                                    <span class="text-lg font-bold text-gray-800">Rp 6XX.XXX.XXX</span>
+                                    {{-- <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span> --}}
                                 </div>
                                 <button
                                     class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
                                     Beli
                                 </button>
                             </div>
@@ -107,12 +107,12 @@
                             <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk ini.</p>
                             <div class="flex justify-between items-center">
                                 <div>
-                                    <span class="text-lg font-bold text-gray-800">Rp 249.000</span>
-                                    <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span>
+                                    <span class="text-lg font-bold text-gray-800">Rp 6XX.XXX.XXX</span>
+                                    {{-- <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span> --}}
                                 </div>
                                 <button
                                     class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
                                     Beli
                                 </button>
                             </div>
@@ -133,12 +133,12 @@
                             <p class="text-sm text-gray-600 mb-3">Deskripsi singkat produk ini.</p>
                             <div class="flex justify-between items-center">
                                 <div>
-                                    <span class="text-lg font-bold text-gray-800">Rp 249.000</span>
-                                    <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span>
+                                    <span class="text-lg font-bold text-gray-800">Rp 6XX.XXX.XXX</span>
+                                    {{-- <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span> --}}
                                 </div>
                                 <button
                                     class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
                                     Beli
                                 </button>
                             </div>

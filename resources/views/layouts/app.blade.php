@@ -110,7 +110,7 @@
         <div class="w-10/12 md:w-9/12 mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             <!-- About Us Section -->
             <div class="space-y-4">
-                <h3 class="text-lg font-semibold">About Us</h3>
+                <h3 class="text-lg font-semibold">Tentang Kami</h3>
                 <p class="text-gray-400 text-sm">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iusto at culpa numquam veritatis! A,
                     reprehenderit? Eos dignissimos corporis perferendis? Facere aspernatur repellendus facilis molestias
@@ -133,7 +133,7 @@
 
             <!-- Services Section -->
             <div class="space-y-4">
-                <h3 class="text-lg font-semibold">Our Services</h3>
+                <h3 class="text-lg font-semibold">Produk Kami</h3>
                 <ul class="text-gray-400 text-sm space-y-2">
                     <li><a href="#service1" class="hover:text-blue-400">Service 1</a></li>
                     <li><a href="#service2" class="hover:text-blue-400">Service 2</a></li>
@@ -144,16 +144,16 @@
 
             <!-- Contact Info Section -->
             <div class="space-y-4">
-                <h3 class="text-lg font-semibold">Contact Info</h3>
+                <h3 class="text-lg font-semibold">Info Kontak</h3>
                 <ul class="text-gray-400 text-sm space-y-2">
                     <li><span class="text-blue-400">Address:</span> 123 Environmental Lane, Green City</li>
                     <li><span class="text-blue-400">Phone:</span> (123) 456-7890</li>
                     <li><span class="text-blue-400">Email:</span> info@environment.com</li>
                     <li class="flex space-x-4 mt-4">
-                        <a href="#"><img class="w-6 h-6" src="/img/Instagram.svg" alt="Instagram" /></a>
-                        <a href="#"><img class="w-6 h-6" src="/img/Github.svg" alt="GitHub" /></a>
-                        <a href="#"><img class="w-6 h-6" src="/img/Twitter.svg" alt="Twitter" /></a>
-                        <a href="#"><img class="w-6 h-6" src="/img/Linkedin.svg" alt="LinkedIn" /></a>
+                        <a href="#" class="fa-brands fa-linkedin-in w-6 h-6" style="color: #ffffff;"></a>
+                        <a href="#" class="fa-brands fa-instagram w-6 h-6" style="color: #ffffff;"></a>
+                        <a href="#" class="fa-brands fa-facebook-f w-6 h-6" style="color: #ffffff;"></a>
+                        <a href="#" class="fa-brands fa-youtube w-6 h-6" style="color: #ffffff;"></a>
                     </li>
                 </ul>
             </div>
