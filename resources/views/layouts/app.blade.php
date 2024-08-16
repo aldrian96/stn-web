@@ -122,10 +122,12 @@
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold">Quick Links</h3>
                 <ul class="text-gray-400 text-sm space-y-2">
-                    <li><a href="#home" class="hover:text-blue-400">Home</a></li>
-                    <li><a href="#about" class="hover:text-blue-400">Tentang Kami</a></li>
-                    <li><a href="#services" class="hover:text-blue-400">Produk</a></li>
-                    <li><a href="#contact" class="hover:text-blue-400">Sertifikat</a></li>
+                    <li><a href="{{ route('home') }}" class="hover:text-blue-400">Home</a></li>
+                    <li><a href="{{ route('about') }}" class="hover:text-blue-400">Tentang Kami</a></li>
+                    <li><a href="{{ route('produk') }}" class="hover:text-blue-400">Produk</a></li>
+                    <li><a href="{{ route('sertifikat') }}" class="hover:text-blue-400">Sertifikat</a></li>
+                    <li><a href="{{ route('artikel') }}" class="hover:text-blue-400">Artikel</a></li>
+                    <li><a href="{{ route('kontak') }}" class="hover:text-blue-400">Hubungi Kami</a></li>
                 </ul>
             </div>
 
