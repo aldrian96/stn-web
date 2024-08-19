@@ -135,10 +135,10 @@
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold">Produk Kami</h3>
                 <ul class="text-gray-400 text-sm space-y-2">
-                    <li><a href="#service1" class="hover:text-blue-400">Service 1</a></li>
-                    <li><a href="#service2" class="hover:text-blue-400">Service 2</a></li>
-                    <li><a href="#service3" class="hover:text-blue-400">Service 3</a></li>
-                    <li><a href="#service4" class="hover:text-blue-400">Service 4</a></li>
+                    <li><a href="#service1" class="hover:text-blue-400">Produk 1</a></li>
+                    <li><a href="#service2" class="hover:text-blue-400">Produk 2</a></li>
+                    <li><a href="#service3" class="hover:text-blue-400">Produk 3</a></li>
+                    <li><a href="#service4" class="hover:text-blue-400">Produk 4</a></li>
                 </ul>
             </div>
 
