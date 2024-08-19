@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'PT. Sarana Tunas Niaga')
+@section('title', 'v1.1 PT. Sarana Tunas Niaga')
 
 @section('content')
     {{-- Hero Section --}}
