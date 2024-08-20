@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/img/logo.png">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="bg-gray-200 flex h-screen">
     <!-- Sidebar -->
@@ -59,10 +59,10 @@
             </a>
         
             <!-- Logout Button -->
-            <a href="{{ route('logout') }}" class="flex items-center justify-center text-white bg-red-600 py-2 px-4 rounded-lg">
+            <button onclick="confirmLogout()" class="flex items-center justify-center w-full text-white bg-red-600 py-2 px-4 rounded-lg">
                 <i class="fas fa-sign-out-alt fa-lg mr-3"></i>
                 <span>Logout</span>
-            </a>
+            </button>
         </div>
         
     </div>
@@ -92,5 +92,24 @@
             @yield('content')
         </div>
     </div>
+
+    <script>
+        function confirmLogout() {
+            Swal.fire({
+                title: 'Anda yakin ingin logout?',
+                text: 'Anda akan diarahkan ke halaman login.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Logout',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "{{ route('logout') }}";
+                }
+            });
+        }
+    </script>
 </body>
 </html>

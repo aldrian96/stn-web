@@ -50,7 +50,8 @@
                         <a href="{{ route('dashboard.artikel.crud.edit_artikel') }}" class="bg-yellow-600 text-white px-2 py-1 rounded-lg ml-4 hover:bg-yellow-700 transition duration-300">
                             <i class="fas fa-edit"></i>
                         </a>
-                        <button class="bg-red-600 text-white px-2 py-1 rounded-lg ml-4 hover:bg-red-700 transition duration-300">
+                        <!-- Delete Button -->
+                        <button class="bg-red-600 text-white px-2 py-1 rounded-lg ml-4 hover:bg-red-700 transition duration-300" onclick="confirmDelete()">
                             <i class="fas fa-trash"></i>
                         </button>
                     </td>
@@ -60,7 +61,7 @@
                     <td class="px-6 py-4">Judul Artikel 2</td>
                     <td class="px-6 py-4">Penulis 2</td>
                     <td class="px-6 py-4">Kategori 2</td>
-                    <td class="px-6 py-4">20 Aug 2024</td>
+                    <td class="px-6 py-4">21 Aug 2024</td>
                     <td class="px-6 py-4 flex justify-center">
                         <button class="bg-indigo-600 text-white px-2 py-1 rounded-lg hover:bg-indigo-700 transition duration-300">
                             <i class="fas fa-eye"></i>
@@ -68,7 +69,7 @@
                         <a href="{{ route('dashboard.artikel.crud.edit_artikel') }}" class="bg-yellow-600 text-white px-2 py-1 rounded-lg ml-4 hover:bg-yellow-700 transition duration-300">
                             <i class="fas fa-edit"></i>
                         </a>
-                        <button class="bg-red-600 text-white px-2 py-1 rounded-lg ml-4 hover:bg-red-700 transition duration-300">
+                        <button class="bg-red-600 text-white px-2 py-1 rounded-lg ml-4 hover:bg-red-700 transition duration-300" onclick="confirmDelete()">
                             <i class="fas fa-trash"></i>
                         </button>
                     </td>
@@ -77,4 +78,25 @@
         </table>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function confirmDelete() {
+        Swal.fire({
+            title: 'Apakah Anda yakin?',
+            text: 'Artikel ini akan dihapus secara permanen!',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Hapus',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Implement redirect to delete URL or delete action here if connected to backend
+                console.log('Artikel dihapus');
+            }
+        });
+    }
+</script>
 @endsection
