@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'Company Profile')</title>
     @vite('resources/css/app.css')
+    <link rel="shortcut icon" href="/img/logo.png">
 </head>
 
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">

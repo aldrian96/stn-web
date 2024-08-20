@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     @vite('resources/css/app.css')
+    <link rel="shortcut icon" href="/img/logo.png">
+
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-8 mx-4 sm:mx-6 lg:mx-8">
@@ -48,7 +50,7 @@
                 <button type="submit" class="w-full bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">Login</button>
             </div>
         </form>
-        <a href="{{ route('dashboard.menu1') }}" class="flex justify-center text-sm text-green-600 hover:underline">Masuk Dashboard</a>
+        <a href="{{ route('dashboard.brosur.menu_brosur') }}" class="flex justify-center text-sm text-green-600 hover:underline">Masuk Dashboard</a>
 
         <a href="{{ route('home') }}" class="flex justify-center text-sm text-green-600 hover:underline">Kembali</a>
     </div>

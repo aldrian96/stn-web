@@ -11,18 +11,35 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
-Route::get('/dashboard/menu1', function () {
-    return view('dashboard.menu1');
-})->name('dashboard.menu1');
-
-Route::get('/dashboard/menu2', function () {
-    return view('dashboard.menu2');
-})->name('dashboard.menu2');
-
 Route::post('/logout', function () {
     Auth::logout();
     return redirect('/');
 })->name('logout');
+
+// Brosur
+Route::get('/dashboard/brosur/menu_brosur', function () {
+    return view('dashboard.brosur.menu_brosur');
+})->name('dashboard.brosur.menu_brosur');
+
+// Artikel
+Route::get('/dashboard/artikel/menu_artikel', function () {
+    return view('dashboard.artikel.menu_artikel');
+})->name('dashboard.artikel.menu_artikel');
+
+// Create Artikel
+Route::get('/dashboard/artikel/crud/create_artikel', function () {
+    return view('dashboard.artikel.crud.create_artikel');
+})->name('dashboard.artikel.crud.create_artikel');
+
+// Edit Artikel
+Route::get('/dashboard/artikel/crud/edit_artikel', function () {
+    return view('dashboard.artikel.crud.edit_artikel');
+})->name('dashboard.artikel.crud.edit_artikel');
+
+// Detail Artikel
+Route::get('/dashboard/artikel/crud/detail_artikel', function () {
+    return view('dashboard.artikel.crud.detail_artikel');
+})->name('dashboard.artikel.crud.detail_artikel');
 
 Route::get('/minta-brosur', function () {
     return view('brosur');
