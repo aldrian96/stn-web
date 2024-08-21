@@ -138,9 +138,9 @@
                     
                                     <!-- Submenu Dropdown for Incernato -->
                                     <div id="submenu-incernato-menu" class="hidden md:absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left md:group-hover:block">
-                                        <a href="{{ route('produk') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod1</a>
-                                        <a href="{{ route('produk') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod2</a>
-                                        <a href="{{ route('produk') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod3</a>
+                                        <a href="{{ route('incernato') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod1</a>
+                                        <a href="{{ route('incernato') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod2</a>
+                                        <a href="{{ route('incernato') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod3</a>
                                     </div>
                                 </div>
                     
@@ -155,9 +155,9 @@
                     
                                     <!-- Submenu Dropdown for Jasa -->
                                     <div id="submenu-jasa-menu" class="hidden md:absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left md:group-hover:block">
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa1</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa2</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa3</a>
+                                        <a href="{{ route('jasa') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa1</a>
+                                        <a href="{{ route('jasa') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa2</a>
+                                        <a href="{{ route('jasa') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa3</a>
                                     </div>
                                 </div>
                     
@@ -172,9 +172,9 @@
                     
                                     <!-- Submenu Dropdown for Kontraktor -->
                                     <div id="submenu-kontraktor-menu" class="hidden md:absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left md:group-hover:block">
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kont1</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kont2</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kont3</a>
+                                        <a href="{{ route('kontraktor') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kont1</a>
+                                        <a href="{{ route('kontraktor') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kont2</a>
+                                        <a href="{{ route('kontraktor') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kont3</a>
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +238,7 @@
                 <ul class="text-gray-400 text-sm space-y-2">
                     <li><a href="{{ route('home') }}" class="hover:text-blue-400">Home</a></li>
                     <li><a href="{{ route('about') }}" class="hover:text-blue-400">Tentang Kami</a></li>
-                    <li><a href="{{ route('produk') }}" class="hover:text-blue-400">Produk</a></li>
+                    {{-- <li><a href="#" class="hover:text-blue-400">Produk</a></li> --}}
                     <li><a href="{{ route('sertifikat') }}" class="hover:text-blue-400">Sertifikat</a></li>
                     <li><a href="{{ route('artikel') }}" class="hover:text-blue-400">Artikel</a></li>
                     <li><a href="{{ route('kontak') }}" class="hover:text-blue-400">Hubungi Kami</a></li>

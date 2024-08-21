@@ -103,7 +103,7 @@
                         bagian dari perubahan positif dengan menggunakan solusi teknologi ramah lingkungan kami.
                     </p>
                     <div class="mt-8 flex justify-center">
-                        <a href="{{ route('produk') }}"
+                        <a href="{{ route('incernato') }}"
                             class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-600 bg-white hover:bg-emerald-50 transition-colors duration-300 shadow-md hover:shadow-lg mr-4">
                             <i class="fas fa-box-open mr-2"></i> <!-- Icon untuk Lihat Katalog Produk -->
                             Lihat Katalog Produk

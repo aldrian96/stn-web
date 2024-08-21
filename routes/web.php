@@ -41,6 +41,21 @@ Route::get('/dashboard/artikel/crud/detail_artikel', function () {
     return view('dashboard.artikel.crud.detail_artikel');
 })->name('dashboard.artikel.crud.detail_artikel');
 
+// Incernato
+Route::get('/incernato', function () {
+    return view('incernato');
+})->name('incernato');
+
+// Jasa
+Route::get('/jasa', function () {
+    return view('jasa');
+})->name('jasa');
+
+// Kontraktor
+Route::get('/kontraktor', function () {
+    return view('kontraktor');
+})->name('kontraktor');
+
 Route::get('/minta-brosur', function () {
     return view('brosur');
 })->name('brosur');
@@ -49,9 +64,9 @@ Route::get('/tentang-kami', function () {
     return view('about');
 })->name('about');
 
-Route::get('/produk', function () {
-    return view('produk');
-})->name('produk');
+// Route::get('/produk', function () {
+//     return view('produk');
+// })->name('produk');
 
 Route::get('/sertifikat', function () {
     return view('sertifikat');

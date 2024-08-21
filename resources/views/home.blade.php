@@ -222,7 +222,7 @@
                     <div class="p-6">
                         <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
                         <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
-                        <a href="#" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
+                        <a href="{{ route('incernato') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                             &rarr;</a>
                     </div>
                 </div>
@@ -244,7 +244,7 @@
                     <div class="p-6">
                         <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
                         <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
-                        <a href="#" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
+                        <a href="{{ route('jasa') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                             &rarr;</a>
                     </div>
                 </div>
@@ -266,24 +266,10 @@
                     <div class="p-6">
                         <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
                         <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
-                        <a href="#" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
+                        <a href="{{ route('kontraktor') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                             &rarr;</a>
                     </div>
                 </div>
-            </div>
-            <div class="text-center mt-10">
-                <!-- Tombol Sertifikat Lainnya -->
-                <a href="{{ route('produk') }}"
-                    class="inline-flex items-center bg-gradient-to-r
-                    from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full
-                    shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
-                    <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                        </path>
-                    </svg>
-                    Produk Lainnya
-                </a>
             </div>
         </div>
 
