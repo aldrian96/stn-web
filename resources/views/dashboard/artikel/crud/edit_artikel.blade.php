@@ -51,10 +51,11 @@
             <input type="file" id="gambar" name="gambar" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" accept="image/*">
         </div>
 
-        <!-- Textarea Konten -->
+        <!-- Konten Artikel dengan Trix Editor -->
         <div class="mb-4">
             <label for="konten" class="block text-sm font-medium text-gray-700 mb-1">Konten Artikel</label>
-            <textarea id="konten" name="konten" rows="6" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" required></textarea>
+            <input id="konten" type="hidden" name="konten">
+            <trix-editor input="konten" class="trix-content w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500"></trix-editor>
         </div>
 
         <!-- Button Group -->
