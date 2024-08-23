@@ -3,10 +3,18 @@
 @section('title', 'PT STN | Tentang Kami')
 
 @section('content')
-    <div class="py-12 bg-gradient-to-b from-gray-100 to-gray-200">
-        <div class="w-11/12 lg:w-9/12 mx-auto">
-            <div class="bg-white py-16 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
-                <div class="text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative py-12 bg-gradient-to-b from-gray-100 to-gray-200">
+        <!-- Background Image -->
+        {{-- <div class="absolute inset-0">
+            <img src="{{ asset('/img/tentang-kami.png') }}" alt="Background Image" class="w-full h-full object-cover opacity-50">
+        </div> --}}
+        <div class="absolute inset-0">
+            <img src="{{ asset('/img/tentang-kami.png') }}" alt="Background Image" class="w-full h-full">
+        </div>
+        
+        <div class="relative w-11/12 lg:w-9/12 mx-auto">
+            <div class="bg-white py-16 px-6 lg:px-12 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-80">
+                <div class="text-center max-w-5xl mx-auto">
                     <h2 class="text-base text-emerald-600 font-semibold tracking-wide uppercase animate-pulse">
                         Tentang Kami
                     </h2>
@@ -17,7 +25,7 @@
                         Kami adalah perusahaan yang berkomitmen untuk memberikan solusi terbaik dalam bidang teknologi dan inovasi.
                     </p>
                 </div>
-                <div class="mt-12 px-4 sm:px-6 lg:px-8">
+                <div class="mt-12">
                     <p class="text-justify text-gray-700 leading-relaxed space-y-4">
                         Melalui riset dengan perbaikan dan pengembangan terus menerus maka terciptalah mesin olah sampah atau incinerator ini. Dukungan lembaga Universitas, individu maupun lembaga swasta yang peduli akan lingkungan mewujudkan hasil original karya anak bangsa yang telah dipatenkan (HKI dan paten dapat di-scan barcode di bawah).
                     </p>

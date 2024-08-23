@@ -8,7 +8,7 @@
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-center"
-                style="background-image: url('/img/hero-stn.jpeg');">
+                style="background-image: url('/img/slide1.png');">
                 <!-- Overlay Gelap -->
                 <div class="absolute inset-0 bg-black opacity-60"></div>
 
@@ -27,8 +27,7 @@
                             <span class="text-white">Incinerator</span>
                         </h3>
                         <p class="font-light text-white mt-4">
-                            Bebas dari asap, emisi, dan bau dengan spray penghilang racun. Manfaatkan energi panas
-                            cerobong untuk hasil yang optimal. Ubah residu organik menjadi media tanam dan bahan campuran
+                            Solusi Sampah Masa Depan Mudah, Murah, Bersih dan Aman
                         </p>
                         <div class="flex flex-row mt-6 space-x-4">
                             <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -42,7 +41,7 @@
 
             <!-- Slide 2 -->
             <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-end"
-                style="background-image: url('/img/company-hero.jpg');">
+                style="background-image: url('/img/slide2.png');">
                 <!-- Overlay Gelap -->
                 <div class="absolute inset-0 bg-black opacity-60"></div>
 
@@ -61,9 +60,7 @@
                             <span class="text-white">Incinerator</span>
                         </h3>
                         <p class="font-light text-white mt-4">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque doloremque pariatur, sequi
-                            eligendi omnis vel tempora, aspernatur est, ratione dolorum asperiores fuga inventore et
-                            laudantium suscipit recusandae sed fugiat ipsum.
+                            Tanpa BBM - Tanpa Batubara - Tanpa Gas - Tanpa Listrik Incinerator Berbasis Reaktor Air pertama di dunia
                         </p>
                         <div class="flex flex-row mt-6 space-x-4 justify-end">
                             <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -78,7 +75,7 @@
 
             <!-- Slide 3 -->
             <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-center"
-                style="background-image: url('/img/slide-3.jpg');">
+                style="background-image: url('/img/slide3.png');">
                 <!-- Overlay Gelap -->
                 <div class="absolute inset-0 bg-black opacity-60"></div>
 
@@ -97,9 +94,7 @@
                             <span class="text-white">Incinerator</span>
                         </h3>
                         <p class="font-light text-white mt-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab at magni vel quis animi quasi?
-                            Molestiae sunt impedit, nulla quas vitae quasi excepturi deserunt veritatis ipsa, explicabo eos
-                            accusamus.
+                            Tanpa asap, emisi dan bau dengan spray penghilang racun Energi panas cerobong dapat dimanfaatkan Mengubah residu organik menjadi media tanam dan campuran material
                         </p>
                         <div class="flex flex-row mt-6 space-x-4">
                             <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -113,7 +108,7 @@
 
             <!-- Slide 4 -->
             <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-end"
-                style="background-image: url('/img/about-us.jpg');">
+                style="background-image: url('/img/slide4.jpeg');">
                 <!-- Overlay Gelap -->
                 <div class="absolute inset-0 bg-black opacity-60"></div>
 
@@ -132,9 +127,7 @@
                             <span class="text-white">Incinerator</span>
                         </h3>
                         <p class="font-light text-white mt-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab at magni vel quis animi quasi?
-                            Molestiae sunt impedit, nulla quas vitae quasi excepturi deserunt veritatis ipsa, explicabo eos
-                            accusamus..
+                            incinerator AG 50, incinerator AG 100, incinerator AG 300
                         </p>
                         <div class="flex flex-row mt-6 space-x-4 justify-end">
                             <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>

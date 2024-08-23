@@ -20,8 +20,8 @@
     <div class="bg-green-600 text-white py-2">
         <div class="w-11/12 md:w-9/12 mx-auto text-center">
             <p class="text-sm md:text-base">
-                📢 Jangan lewatkan event kami yang akan datang pada <strong>20 Agustus 2024!</strong>! <a href="#event"
-                    class="underline hover:text-gray-200">Pelajari lebih lanjut</a>
+                Selamat datang di Website resmi PT. Sarana Tunas Niaga
+                <a href="#event" class="underline hover:text-gray-200">Pelajari lebih lanjut</a>
             </p>
         </div>
     </div>
@@ -242,7 +242,7 @@
         </div>
 
         <div class="footer-bottom mt-8 text-center text-gray-500 text-sm">
-            &copy; 2024 Company Name. All rights reserved.
+            &copy; 2024 PT. Sarana Tunas Niaga. All rights reserved.
         </div>
     </footer>
 
