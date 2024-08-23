@@ -381,7 +381,7 @@
                         <h3 class="font-bold text-xl mb-2">Pentingnya Pengelolaan Limbah yang Bertanggung Jawab</h3>
                         <p class="text-gray-600 mb-4">Pelajari mengapa pengelolaan limbah yang bertanggung jawab sangat
                             penting untuk menjaga lingkungan dan kesehatan kita.</p>
-                        <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
+                        <a href="{{ route('show_artikel') }}" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
                             &rarr;</a>
                     </div>
                 </div>
@@ -394,7 +394,7 @@
                         <h3 class="font-bold text-xl mb-2">Inovasi Teknologi Ramah Lingkungan</h3>
                         <p class="text-gray-600 mb-4">Temukan teknologi terbaru yang membantu mengurangi dampak lingkungan
                             dan menciptakan masa depan yang lebih berkelanjutan.</p>
-                        <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
+                        <a href="{{ route('show_artikel') }}" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
                             &rarr;</a>
                     </div>
                 </div>
@@ -406,7 +406,7 @@
                         <h3 class="font-bold text-xl mb-2">Tips Mengurangi Sampah di Rumah</h3>
                         <p class="text-gray-600 mb-4">Praktikkan langkah-langkah sederhana untuk mengurangi produksi sampah
                             dan berkontribusi pada lingkungan yang lebih bersih.</p>
-                        <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
+                        <a href="{{ route('show_artikel') }}" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
                             &rarr;</a>
                     </div>
                 </div>

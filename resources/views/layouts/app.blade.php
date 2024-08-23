@@ -21,7 +21,7 @@
         <div class="w-11/12 md:w-9/12 mx-auto text-center">
             <p class="text-sm md:text-base">
                 Selamat datang di Website resmi PT. Sarana Tunas Niaga
-                <a href="#event" class="underline hover:text-gray-200">Pelajari lebih lanjut</a>
+                <a href="{{ route('about') }}" class="underline hover:text-gray-200">Pelajari lebih lanjut</a>
             </p>
         </div>
     </div>

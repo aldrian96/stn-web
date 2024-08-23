@@ -34,7 +34,7 @@
                         </div>
                         <h3 class="font-bold text-xl mb-2 text-gray-800">Judul Artikel {{ $i }}</h3>
                         <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#" class="text-blue-500 hover:text-blue-600 transition-colors duration-300 flex items-center font-semibold">
+                        <a href="{{ route('show_artikel') }}" class="text-blue-500 hover:text-blue-600 transition-colors duration-300 flex items-center font-semibold">
                             Baca selengkapnya
                             <i class="fas fa-arrow-right ml-2"></i>
                         </a>

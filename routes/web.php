@@ -36,10 +36,15 @@ Route::get('/dashboard/artikel/crud/edit_artikel', function () {
     return view('dashboard.artikel.crud.edit_artikel');
 })->name('dashboard.artikel.crud.edit_artikel');
 
-// Detail Artikel
+// Detail Artikel Dashboard
 Route::get('/dashboard/artikel/crud/detail_artikel', function () {
     return view('dashboard.artikel.crud.detail_artikel');
 })->name('dashboard.artikel.crud.detail_artikel');
+
+// Detail Artikel Pembaca
+Route::get('/show_artikel', function () {
+    return view('show_artikel');
+})->name('show_artikel');
 
 // incinerator
 Route::get('/incinerator', function () {
