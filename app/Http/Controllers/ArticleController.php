@@ -79,4 +79,20 @@ class ArticleController extends Controller
     {
         dd($id);
     }
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function deleteArtikel(string $id)
+    {
+        $data = Article::findOrFail($id);
+        if($data->delete()){
+            return redirect()->back()->with([
+                'message' => 'berhasil menghapus artikel.'
+            ]);
+            
+        }
+        return redirect()->back()->with([
+            'message' => 'Gagal.'
+        ]);
+    }
 }

@@ -60,7 +60,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     function confirmDelete(id) {
-        Swal.fire({
+        Swal.fire({ 
             title: 'Apakah Anda yakin?',
             text: 'Artikel ini akan dihapus secara permanen!',
             icon: 'warning',
@@ -72,7 +72,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 // Redirect to the delete route
-                window.location.href = `/dashboard/delete-artikel/${id}`; // Adjust the URL path as needed
+                window.location.href = `/dashboard/artikel/delete/${id}`; // Adjust the URL path as needed
             }
         });
     }

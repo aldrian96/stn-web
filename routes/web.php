@@ -17,9 +17,7 @@ Route::post('/logout', function () {
 })->name('logout');
 
 // Brosur
-Route::get('/dashboard/brosur/menu_brosur', function () {
-    return view('dashboard.brosur.menu_brosur');
-})->name('dashboard.brosur.menu_brosur');
+Route::get('/dashboard/brosur/menu_brosur', [\App\Http\Controllers\BrochureController::class, 'index'])->name('dashboard.brosur.menu_brosur');
 
 // Define a route group with a common prefix
 Route::prefix('dashboard/artikel')->name('dashboard.artikel.')->group(function () {
@@ -27,6 +25,8 @@ Route::prefix('dashboard/artikel')->name('dashboard.artikel.')->group(function (
     // Route for the article menu
     Route::get('/menu_artikel', [\App\Http\Controllers\ArticleController::class, 'index'])
         ->name('menu_artikel');
+    Route::get('/delete/{id}', [\App\Http\Controllers\ArticleController::class, 'deleteArtikel'])
+        ->name('delete-artikel');
 
     Route::post("", [\App\Http\Controllers\ArticleController::class, 'store'])
         ->name('crud.store_artikel');

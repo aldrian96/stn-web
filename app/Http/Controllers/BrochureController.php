@@ -10,9 +10,10 @@ class BrochureController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $data = FormRequestBrochure::paginate($request->perPage ?? 10);
+        return response()->view('dashboard.brosur.menu_brosur', $data);
     }
 
     /**
