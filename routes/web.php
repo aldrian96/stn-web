@@ -41,10 +41,10 @@ Route::get('/dashboard/artikel/crud/detail_artikel', function () {
     return view('dashboard.artikel.crud.detail_artikel');
 })->name('dashboard.artikel.crud.detail_artikel');
 
-// Incernato
-Route::get('/incernato', function () {
-    return view('incernato');
-})->name('incernato');
+// incinerator
+Route::get('/incinerator', function () {
+    return view('incinerator');
+})->name('incinerator');
 
 // Jasa
 Route::get('/jasa', function () {

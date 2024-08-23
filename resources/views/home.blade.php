@@ -222,7 +222,7 @@
                     <div class="p-6">
                         <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
                         <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
-                        <a href="{{ route('incernato') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
+                        <a href="{{ route('incinerator') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                             &rarr;</a>
                     </div>
                 </div>

@@ -62,65 +62,6 @@
                             class="absolute bottom-0 left-0 w-full h-0.5 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 {{ Route::currentRouteName() == 'about' ? 'scale-x-100' : '' }}"></span>
                     </a>
 
-
-                    <!-- Dropdown Scroll -->
-                    {{-- <div class="relative group py-2">
-                        <button class="flex items-center hover:text-green-600 transition duration-300 {{ Route::currentRouteName() == 'produk' ? 'text-green-600' : 'text-gray-700' }}">
-                            <span>Produk</span>
-                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <!-- Main Dropdown -->
-                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transition-all duration-300 origin-top">
-                            <div class="py-1">
-                                <!-- Submenu -->
-                                <div class="relative px-4 py-2 hover:bg-gray-100 group/sub">
-                                    <span class="block text-sm text-gray-700 flex items-center justify-between">
-                                        Incernato
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                        </svg>
-                                    </span>
-                                    <!-- Submenu Dropdown -->
-                                    <div class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left">
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod1</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod2</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod3</a>
-                                    </div>
-                                </div>
-                                <div class="relative px-4 py-2 hover:bg-gray-100 group/sub">
-                                    <span class="block text-sm text-gray-700 flex items-center justify-between">
-                                        Jasa
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                        </svg>
-                                    </span>
-                                    <div class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left">
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa1</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa2</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jasa3</a>
-                                    </div>
-                                </div>
-                                <div class="relative px-4 py-2 hover:bg-gray-100 group/sub">
-                                    <span class="block text-sm text-gray-700 flex items-center justify-between">
-                                        Kontraktor
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                        </svg>
-                                    </span>
-                                    <div class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left">
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kont1</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kont2</a>
-                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kont3</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Bottom border animation -->
-                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 {{ Route::currentRouteName() == 'produk' ? 'scale-x-100' : '' }}"></span>
-                    </div> --}}
-
                     <!-- Dropdown Numpuk -->
                     <div class="relative group py-2">
                         <button id="produk-btn" class="flex items-center justify-between w-full hover:text-green-600 transition duration-300 text-gray-700 md:w-auto md:inline-flex">
@@ -133,20 +74,20 @@
                         <!-- Main Dropdown -->
                         <div id="produk-menu" class="hidden md:absolute left-0 mt-2 w-48 bg-white rounded-md opacity-0 transform scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transition-all duration-300 origin-top md:group-hover:block">
                             <div class="py-1">
-                                <!-- Submenu for Incernato -->
+                                <!-- Submenu for incinerator -->
                                 <div class="relative px-4 py-2 hover:bg-gray-100 group/sub">
-                                    <button id="submenu-incernato" class="w-full text-left flex items-center justify-between">
-                                        <span class="block text-sm text-gray-700">Incernato</span>
+                                    <button id="submenu-incinerator" class="w-full text-left flex items-center justify-between">
+                                        <span class="block text-sm text-gray-700">Incinerator</span>
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                         </svg>
                                     </button>
                     
-                                    <!-- Submenu Dropdown for Incernato -->
-                                    <div id="submenu-incernato-menu" class="hidden md:absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left md:group-hover:block">
-                                        <a href="{{ route('incernato') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod1</a>
-                                        <a href="{{ route('incernato') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod2</a>
-                                        <a href="{{ route('incernato') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod3</a>
+                                    <!-- Submenu Dropdown for incinerator -->
+                                    <div id="submenu-incinerator-menu" class="hidden md:absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left md:group-hover:block">
+                                        <a href="{{ route('incinerator') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod1</a>
+                                        <a href="{{ route('incinerator') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod2</a>
+                                        <a href="{{ route('incinerator') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prod3</a>
                                     </div>
                                 </div>
                     
@@ -310,9 +251,9 @@
             menu.classList.toggle('scale-y-100');
         });
 
-        // Toggle submenu Incernato
-        document.getElementById('submenu-incernato').addEventListener('click', function() {
-            const submenu = document.getElementById('submenu-incernato-menu');
+        // Toggle submenu incinerator
+        document.getElementById('submenu-incinerator').addEventListener('click', function() {
+            const submenu = document.getElementById('submenu-incinerator-menu');
             submenu.classList.toggle('hidden');
             submenu.classList.toggle('opacity-100');
             submenu.classList.toggle('scale-y-100');
