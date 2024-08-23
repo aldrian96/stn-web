@@ -176,7 +176,7 @@
                     AG Incinerator, hasil riset berkelanjutan dan dukungan berbagai pihak, dipatenkan sebagai karya anak bangsa, hadir dalam tipe beragam untuk mengurangi beban TPA, didukung masyarakat, pemerintah, dan dunia usaha dalam pengembangannya.
                 </p>
             </div>
-    
+
             <!-- Quick Links Section -->
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold">Quick Links</h3>
@@ -189,7 +189,7 @@
                     <li><a href="{{ route('kontak') }}" class="hover:text-blue-400">Hubungi Kami</a></li>
                 </ul>
             </div>
-    
+
             <!-- Services Section -->
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold">Produk Kami</h3>
@@ -199,35 +199,35 @@
                     <li><a href="{{ route('incinerator') }}" class="hover:text-blue-400">Incinerator AG 300</a></li>
                 </ul>
             </div>
-    
+
             <!-- Contact Info Section -->
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold">Info Kontak</h3>
                 <ul class="text-gray-400 text-sm space-y-2">
                     <!-- Alamat 1 -->
-                    <li class="flex items-start space-x-2">
-                        <i class="fas fa-map-marker-alt text-gray-600"></i>
-                        <span class="truncate w-full lg:w-64">Jl. Junti Girang No.131, Bojongkunci, Kec. Pameungpeuk, Kabupaten Bandung, Jawa Barat 40376</span>
+                    <li class="flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-gray-600"></i>
+                        <span class="truncate w-64 lg:w-96 block">Jl. Junti Girang No.131, Bojongkunci, Kec. Pameungpeuk, Kabupaten Bandung, Jawa Barat 40376</span>
                     </li>
                     <!-- Alamat 2 -->
-                    <li class="flex items-start space-x-2">
-                        <i class="fas fa-map-marker-alt text-gray-600"></i>
-                        <span class="truncate w-full lg:w-64">Jl. Beruang III, Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat 17530</span>
+                    <li class="flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-gray-600"></i>
+                        <span class="truncate w-64 lg:w-96 block">Jl. Beruang III, Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat 17530</span>
                     </li>
                     <!-- Telepon 1 -->
-                    <li class="flex items-center space-x-2">
-                        <i class="fas fa-phone text-gray-600"></i>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone mr-2 text-gray-600"></i>
                         <span>(+62) 822-4045-8540</span>
                     </li>
                     <!-- Telepon 2 -->
-                    <li class="flex items-center space-x-2">
-                        <i class="fas fa-phone text-gray-600"></i>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone mr-2 text-gray-600"></i>
                         <span>(+62) 811-163-382</span>
                     </li>
                     <!-- Email -->
-                    <li class="flex items-center space-x-2">
-                        <i class="fas fa-envelope text-gray-600"></i>
-                        <span class="truncate w-full lg:w-64">saranatunasniaga@gmail.com</span>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-2 text-gray-600"></i>
+                        <span class="truncate w-64 lg:w-96 block">saranatunasniaga@gmail.com</span>
                     </li>
                 </ul>
                 <!-- Ikon Media Sosial -->
@@ -240,12 +240,11 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="footer-bottom mt-8 text-center text-gray-500 text-sm">
             &copy; 2024 Company Name. All rights reserved.
         </div>
     </footer>
-    
 
     <script>
         function toggleMenu() {
