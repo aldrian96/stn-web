@@ -3,17 +3,12 @@
 @section('content')
 <div class="bg-white rounded-lg shadow-md p-6">
     <h2 class="text-2xl font-bold mb-4">Permintaan Brosur</h2>
-    
+
     <!-- Search and Filter -->
     <div class="mb-4 flex justify-between items-center">
         <input type="text" placeholder="Cari..." class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" />
-        <select class="ml-4 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500">
-            <option value="">Filter</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-        </select>
     </div>
-    
+
     <!-- Table -->
     <div class="overflow-x-auto">
         <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
@@ -23,37 +18,25 @@
                     <th class="px-6 py-3 text-left">No Telp</th>
                     <th class="px-6 py-3 text-left">Nama</th>
                     <th class="px-6 py-3 text-left">Email</th>
-                    <th class="px-6 py-3 text-left">Berkas Kualifikasi</th>
                     <th class="px-6 py-3 text-left text-center">Action</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- Row 1 -->
+
+                @foreach ($data as $item)
                 <tr class="border-b">
                     <td class="px-6 py-4">1</td>
-                    <td class="px-6 py-4">08123456789</td>
-                    <td class="px-6 py-4">John Doe</td>
-                    <td class="px-6 py-4">john@example.com</td>
-                    <td class="px-6 py-4"><a href="#" class="text-green-600 hover:underline">Unduh Berkas</a></td>
+                    <td class="px-6 py-4">{{ $item['phone_number'] }}</td>
+                    <td class="px-6 py-4">{{ $item['name'] }}</td>
+                    <td class="px-6 py-4">{{ $item['company_email'] }}</td>
                     <td class="px-6 py-4 flex justify-center">
                         <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300">
-                            <i class="fas fa-envelope mr-2"></i> Terima
+                            <i class="fas fa-envelope mr-2"></i> Kirim Brosur via Email
                         </button>
                     </td>
                 </tr>
-                <!-- Row 2 -->
-                <tr class="border-b">
-                    <td class="px-6 py-4">2</td>
-                    <td class="px-6 py-4">08123456789</td>
-                    <td class="px-6 py-4">John Doe</td>
-                    <td class="px-6 py-4">john@example.com</td>
-                    <td class="px-6 py-4"><a href="#" class="text-green-600 hover:underline">Unduh Berkas</a></td>
-                    <td class="px-6 py-4 flex justify-center">
-                        <button class="bg-gray-600 text-white px-4 py-2 rounded-lg cursor-not-allowed">
-                            <i class="fas fa-envelope-open mr-2"></i> Diterima
-                        </button>
-                    </td>
-                </tr>
+                @endforeach
                 <!-- Add more rows as needed -->
             </tbody>
         </table>

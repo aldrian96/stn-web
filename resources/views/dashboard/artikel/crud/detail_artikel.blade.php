@@ -11,13 +11,11 @@
             <img src="/img/artikel.jpg" alt="Gambar Artikel" class="w-32 h-32 object-cover rounded-lg mr-4">
             <div>
                 <!-- Judul Artikel -->
-                <h3 class="text-xl font-bold mb-2">Judul Artikel</h3>
+                <h3 class="text-xl font-bold mb-2">{{ $data->title }}</h3>
                 <!-- Penulis -->
-                <p class="text-sm text-gray-600 mb-1"><strong>Penulis:</strong> Penulis Artikel</p>
-                <!-- Kategori -->
-                <p class="text-sm text-gray-600 mb-1"><strong>Kategori:</strong> Kategori Artikel</p>
+                <p class="text-sm text-gray-600 mb-1"><strong>Penulis:</strong> {{ $data->author }}</p>
                 <!-- Tanggal -->
-                <p class="text-sm text-gray-600"><strong>Tanggal:</strong> 20 Aug 2024</p>
+                <p class="text-sm text-gray-600"><strong>Tanggal:</strong> {{ $data->created_at }}</p>
             </div>
         </div>
 
@@ -25,7 +23,7 @@
         <div class="mb-4">
             <h4 class="text-lg font-semibold mb-2">Konten Artikel</h4>
             <p class="text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras auctor justo nec facilisis vulputate. Nam non nunc nec justo tincidunt luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                {!! $data->body !!}
             </p>
         </div>
 

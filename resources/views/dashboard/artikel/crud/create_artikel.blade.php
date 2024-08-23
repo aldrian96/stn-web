@@ -5,44 +5,17 @@
     <h2 class="text-2xl font-bold mb-4">Buat Artikel Baru</h2>
 
     <!-- Form Create Artikel -->
-    <form enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data" action={{route('dashboard.artikel.crud.store_artikel')}}>
         @csrf
-
         <!-- Input Judul -->
         <div class="mb-4">
             <label for="judul" class="block text-sm font-medium text-gray-700 mb-1">Judul Artikel</label>
-            <input type="text" id="judul" name="judul" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" required>
+            <input type="text" id="judul" name="title" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" required>
         </div>
-
-        <!-- Input Slug -->
-        <div class="mb-4">
-            <label for="slug" class="block text-sm font-medium text-gray-700 mb-1">Slug</label>
-            <input type="text" id="slug" name="slug" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" required>
-        </div>
-
         <!-- Input Penulis -->
         <div class="mb-4">
             <label for="penulis" class="block text-sm font-medium text-gray-700 mb-1">Penulis</label>
-            <input type="text" id="penulis" name="penulis" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" required>
-        </div>
-
-        <!-- Input Kategori -->
-        <div class="mb-4">
-            <label for="kategori" class="block text-sm font-medium text-gray-700 mb-1">Kategori</label>
-            <select id="kategori" name="kategori" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" required>
-                <option value="" disabled selected>Pilih Kategori</option>
-                <option value="kategori1">Kategori 1</option>
-                <option value="kategori2">Kategori 2</option>
-                <option value="kategori3">Kategori 3</option>
-                <!-- Tambahkan opsi kategori lainnya di sini -->
-            </select>
-        </div>
-
-
-        <!-- Input Tanggal -->
-        <div class="mb-4">
-            <label for="tanggal" class="block text-sm font-medium text-gray-700 mb-1">Tanggal</label>
-            <input type="date" id="tanggal" name="tanggal" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" required>
+            <input type="text" id="penulis" name="author" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" required>
         </div>
 
         <!-- Upload Gambar -->
@@ -54,7 +27,7 @@
         <!-- Konten Artikel dengan Trix Editor -->
         <div class="mb-4">
             <label for="konten" class="block text-sm font-medium text-gray-700 mb-1">Konten Artikel</label>
-            <input id="konten" type="hidden" name="konten">
+            <input id="konten" type="hidden" name="body">
             <trix-editor input="konten" class="trix-content w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500"></trix-editor>
         </div>
 

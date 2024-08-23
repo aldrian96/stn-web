@@ -2,190 +2,195 @@
 
 @section('title', 'PT. Sarana Tunas Niaga')
 
+@if (session('message'))
+<div class="alert alert-info">
+    <h1> {{ session('message') }}</h1>
+</div>
+@endif
 @section('content')
-    {{-- Hero Section --}}
-    <div class="swiper-container h-screen overflow-hidden relative">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-center"
-                style="background-image: url('/img/hero-stn.jpeg');">
-                <!-- Overlay Gelap -->
-                <div class="absolute inset-0 bg-black opacity-60"></div>
+{{-- Hero Section --}}
+<div class="swiper-container h-screen overflow-hidden relative">
+    <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-center"
+            style="background-image: url('/img/hero-stn.jpeg');">
+            <!-- Overlay Gelap -->
+            <div class="absolute inset-0 bg-black opacity-60"></div>
 
-                <div class="w-9/12 my-auto mx-auto relative z-10">
-                    <div class="lg:w-1/2">
-                        <div class="flex items-center">
-                            <svg class="stroke-gray-400 stroke-2 w-5 h-5">
-                                <line x1="0" y1="10px" x2="10px" y2="10px" />
-                            </svg>
-                            <h2 class="uppercase text-xs text-white ml-2">
-                                PT SARANA TUNAS NIAGA
-                            </h2>
-                        </div>
-                        <h3 class="font-bold uppercase text-white text-3xl mt-4">
-                            <span class="text-white">AG</span>
-                            <span class="text-white">Incinerator</span>
-                        </h3>
-                        <p class="font-light text-white mt-4">
-                            Bebas dari asap, emisi, dan bau dengan spray penghilang racun. Manfaatkan energi panas
-                            cerobong untuk hasil yang optimal. Ubah residu organik menjadi media tanam dan bahan campuran
-                        </p>
-                        <div class="flex flex-row mt-6 space-x-4">
-                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
-                        </div>
+            <div class="w-9/12 my-auto mx-auto relative z-10">
+                <div class="lg:w-1/2">
+                    <div class="flex items-center">
+                        <svg class="stroke-gray-400 stroke-2 w-5 h-5">
+                            <line x1="0" y1="10px" x2="10px" y2="10px" />
+                        </svg>
+                        <h2 class="uppercase text-xs text-white ml-2">
+                            PT SARANA TUNAS NIAGA
+                        </h2>
+                    </div>
+                    <h3 class="font-bold uppercase text-white text-3xl mt-4">
+                        <span class="text-white">AG</span>
+                        <span class="text-white">Incinerator</span>
+                    </h3>
+                    <p class="font-light text-white mt-4">
+                        Bebas dari asap, emisi, dan bau dengan spray penghilang racun. Manfaatkan energi panas
+                        cerobong untuk hasil yang optimal. Ubah residu organik menjadi media tanam dan bahan campuran
+                    </p>
+                    <div class="flex flex-row mt-6 space-x-4">
+                        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Slide 2 -->
-            <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-end"
-                style="background-image: url('/img/company-hero.jpg');">
-                <!-- Overlay Gelap -->
-                <div class="absolute inset-0 bg-black opacity-60"></div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-end"
+            style="background-image: url('/img/company-hero.jpg');">
+            <!-- Overlay Gelap -->
+            <div class="absolute inset-0 bg-black opacity-60"></div>
 
-                <div class="w-9/12 mx-auto flex justify-end relative z-10">
-                    <div class="lg:w-1/2 text-right">
-                        <div class="flex items-center justify-end">
-                            <svg class="stroke-white stroke-2 w-5 h-5">
-                                <line x1="0" y1="10px" x2="10px" y2="10px" />
-                            </svg>
-                            <h2 class="uppercase text-xs text-white ml-2">
-                                PT SARANA TUNAS NIAGA
-                            </h2>
-                        </div>
-                        <h3 class="font-bold uppercase text-white text-3xl mt-4">
-                            <span class="text-white">AG</span>
-                            <span class="text-white">Incinerator</span>
-                        </h3>
-                        <p class="font-light text-white mt-4">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque doloremque pariatur, sequi
-                            eligendi omnis vel tempora, aspernatur est, ratione dolorum asperiores fuga inventore et
-                            laudantium suscipit recusandae sed fugiat ipsum.
-                        </p>
-                        <div class="flex flex-row mt-6 space-x-4 justify-end">
-                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
-                        </div>
+            <div class="w-9/12 mx-auto flex justify-end relative z-10">
+                <div class="lg:w-1/2 text-right">
+                    <div class="flex items-center justify-end">
+                        <svg class="stroke-white stroke-2 w-5 h-5">
+                            <line x1="0" y1="10px" x2="10px" y2="10px" />
+                        </svg>
+                        <h2 class="uppercase text-xs text-white ml-2">
+                            PT SARANA TUNAS NIAGA
+                        </h2>
                     </div>
-                </div>
-            </div>
-
-
-            <!-- Slide 3 -->
-            <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-center"
-                style="background-image: url('/img/slide-3.jpg');">
-                <!-- Overlay Gelap -->
-                <div class="absolute inset-0 bg-black opacity-60"></div>
-
-                <div class="w-9/12 my-auto mx-auto relative z-10">
-                    <div class="lg:w-1/2">
-                        <div class="flex items-center">
-                            <svg class="stroke-gray-400 stroke-2 w-5 h-5">
-                                <line x1="0" y1="10px" x2="10px" y2="10px" />
-                            </svg>
-                            <h2 class="uppercase text-xs text-white ml-2">
-                                PT SARANA TUNAS NIAGA
-                            </h2>
-                        </div>
-                        <h3 class="font-bold uppercase text-white text-3xl mt-4">
-                            <span class="text-white">AG</span>
-                            <span class="text-white">Incinerator</span>
-                        </h3>
-                        <p class="font-light text-white mt-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab at magni vel quis animi quasi?
-                            Molestiae sunt impedit, nulla quas vitae quasi excepturi deserunt veritatis ipsa, explicabo eos
-                            accusamus.
-                        </p>
-                        <div class="flex flex-row mt-6 space-x-4">
-                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-end"
-                style="background-image: url('/img/about-us.jpg');">
-                <!-- Overlay Gelap -->
-                <div class="absolute inset-0 bg-black opacity-60"></div>
-
-                <div class="w-9/12 mx-auto flex justify-end relative z-10">
-                    <div class="lg:w-1/2 text-right">
-                        <div class="flex items-center justify-end">
-                            <svg class="stroke-white stroke-2 w-5 h-5">
-                                <line x1="0" y1="10px" x2="10px" y2="10px" />
-                            </svg>
-                            <h2 class="uppercase text-xs text-white ml-2">
-                                PT SARANA TUNAS NIAGA
-                            </h2>
-                        </div>
-                        <h3 class="font-bold uppercase text-white text-3xl mt-4">
-                            <span class="text-white">AG</span>
-                            <span class="text-white">Incinerator</span>
-                        </h3>
-                        <p class="font-light text-white mt-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab at magni vel quis animi quasi?
-                            Molestiae sunt impedit, nulla quas vitae quasi excepturi deserunt veritatis ipsa, explicabo eos
-                            accusamus..
-                        </p>
-                        <div class="flex flex-row mt-6 space-x-4 justify-end">
-                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
-                        </div>
+                    <h3 class="font-bold uppercase text-white text-3xl mt-4">
+                        <span class="text-white">AG</span>
+                        <span class="text-white">Incinerator</span>
+                    </h3>
+                    <p class="font-light text-white mt-4">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque doloremque pariatur, sequi
+                        eligendi omnis vel tempora, aspernatur est, ratione dolorum asperiores fuga inventore et
+                        laudantium suscipit recusandae sed fugiat ipsum.
+                    </p>
+                    <div class="flex flex-row mt-6 space-x-4 justify-end">
+                        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
                     </div>
                 </div>
             </div>
         </div>
 
 
+        <!-- Slide 3 -->
+        <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-center"
+            style="background-image: url('/img/slide-3.jpg');">
+            <!-- Overlay Gelap -->
+            <div class="absolute inset-0 bg-black opacity-60"></div>
 
-        <!-- Add Pagination -->
-        <div class="swiper-pagination z-40 absolute bottom-4 w-full text-center"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-prev z-40 absolute left-4 top-1/2 transform -translate-y-1/2"></div>
-        <div class="swiper-button-next z-40 absolute right-4 top-1/2 transform -translate-y-1/2"></div>
+            <div class="w-9/12 my-auto mx-auto relative z-10">
+                <div class="lg:w-1/2">
+                    <div class="flex items-center">
+                        <svg class="stroke-gray-400 stroke-2 w-5 h-5">
+                            <line x1="0" y1="10px" x2="10px" y2="10px" />
+                        </svg>
+                        <h2 class="uppercase text-xs text-white ml-2">
+                            PT SARANA TUNAS NIAGA
+                        </h2>
+                    </div>
+                    <h3 class="font-bold uppercase text-white text-3xl mt-4">
+                        <span class="text-white">AG</span>
+                        <span class="text-white">Incinerator</span>
+                    </h3>
+                    <p class="font-light text-white mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab at magni vel quis animi quasi?
+                        Molestiae sunt impedit, nulla quas vitae quasi excepturi deserunt veritatis ipsa, explicabo eos
+                        accusamus.
+                    </p>
+                    <div class="flex flex-row mt-6 space-x-4">
+                        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-end"
+            style="background-image: url('/img/about-us.jpg');">
+            <!-- Overlay Gelap -->
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+
+            <div class="w-9/12 mx-auto flex justify-end relative z-10">
+                <div class="lg:w-1/2 text-right">
+                    <div class="flex items-center justify-end">
+                        <svg class="stroke-white stroke-2 w-5 h-5">
+                            <line x1="0" y1="10px" x2="10px" y2="10px" />
+                        </svg>
+                        <h2 class="uppercase text-xs text-white ml-2">
+                            PT SARANA TUNAS NIAGA
+                        </h2>
+                    </div>
+                    <h3 class="font-bold uppercase text-white text-3xl mt-4">
+                        <span class="text-white">AG</span>
+                        <span class="text-white">Incinerator</span>
+                    </h3>
+                    <p class="font-light text-white mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab at magni vel quis animi quasi?
+                        Molestiae sunt impedit, nulla quas vitae quasi excepturi deserunt veritatis ipsa, explicabo eos
+                        accusamus..
+                    </p>
+                    <div class="flex flex-row mt-6 space-x-4 justify-end">
+                        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    {{-- About Us --}}
-    <div class="py-20 bg-gray-100">
-        <div class="w-9/12 mx-auto">
-            <div class="flex flex-wrap items-center">
-                <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
-                    <img src="/img/about-us.jpg" alt="About Us" class="w-full rounded-2xl" />
-                </div>
-                <div class="w-full lg:w-1/2 lg:pl-12">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
-                    <div class="w-20 h-1 bg-green-500 mb-6"></div>
-                    <p class="text-gray-600 mb-6">
-                        AG Incinerator, hasil riset berkelanjutan dan dukungan berbagai pihak, dipatenkan sebagai karya anak bangsa, hadir dalam tipe beragam untuk mengurangi beban TPA, didukung masyarakat, pemerintah, dan dunia usaha dalam pengembangannya.
-                    </p>
 
-                    <a href="{{ route('about') }}"
-                        class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
-                        <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                            </path>
-                        </svg>
-                        Baca Selengkapnya
-                    </a>
-                </div>
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination z-40 absolute bottom-4 w-full text-center"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev z-40 absolute left-4 top-1/2 transform -translate-y-1/2"></div>
+    <div class="swiper-button-next z-40 absolute right-4 top-1/2 transform -translate-y-1/2"></div>
+</div>
+
+{{-- About Us --}}
+<div class="py-20 bg-gray-100">
+    <div class="w-9/12 mx-auto">
+        <div class="flex flex-wrap items-center">
+            <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                <img src="/img/about-us.jpg" alt="About Us" class="w-full rounded-2xl" />
+            </div>
+            <div class="w-full lg:w-1/2 lg:pl-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
+                <div class="w-20 h-1 bg-green-500 mb-6"></div>
+                <p class="text-gray-600 mb-6">
+                    AG Incinerator, hasil riset berkelanjutan dan dukungan berbagai pihak, dipatenkan sebagai karya anak bangsa, hadir dalam tipe beragam untuk mengurangi beban TPA, didukung masyarakat, pemerintah, dan dunia usaha dalam pengembangannya.
+                </p>
+
+                <a href="{{ route('about') }}"
+                    class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+                    <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                        </path>
+                    </svg>
+                    Baca Selengkapnya
+                </a>
             </div>
         </div>
-        <
+    </div>
+    <
 
-    {{-- Product --}}
-    <section id="produk" class="pt-28 pb-16 bg-gray-50">
+        {{-- Product --}}
+        <section id="produk" class="pt-28 pb-16 bg-gray-50">
         <div class="w-9/12 mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Produk Kami</h2>
@@ -276,226 +281,226 @@
                 </button>
             </div>
         </div>
-    </section>
+        </section>
 
-    {{-- Sertifikat --}}
-    <div id="sertifikat" class="pt-28 pb-16 bg-gray-100">
-        <div class="w-10/12 md:w-9/12 mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Sertifikat Kami</h2>
-                <div class="w-24 h-1 bg-green-500 mx-auto mt-2"></div>
-                <p class="text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed">
-                    Kami bangga dengan berbagai sertifikat yang kami miliki sebagai bukti komitmen kami terhadap kualitas
-                    dan inovasi. Sertifikat-sertifikat ini mencerminkan standar tinggi yang kami capai dalam teknologi
-                    pengelolaan limbah dan solusi ramah lingkungan.
-                </p>
-            </div>
+        {{-- Sertifikat --}}
+        <div id="sertifikat" class="pt-28 pb-16 bg-gray-100">
+            <div class="w-10/12 md:w-9/12 mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Sertifikat Kami</h2>
+                    <div class="w-24 h-1 bg-green-500 mx-auto mt-2"></div>
+                    <p class="text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed">
+                        Kami bangga dengan berbagai sertifikat yang kami miliki sebagai bukti komitmen kami terhadap kualitas
+                        dan inovasi. Sertifikat-sertifikat ini mencerminkan standar tinggi yang kami capai dalam teknologi
+                        pengelolaan limbah dan solusi ramah lingkungan.
+                    </p>
+                </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div
-                    class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/certificate.jpg" alt="Sertifikat ISO 9001"
-                        class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                        <p class="text-white text-lg font-semibold">Sertifikat ISO 9001</p>
+                        class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img src="/img/certificate.jpg" alt="Sertifikat ISO 9001"
+                            class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
+                            <p class="text-white text-lg font-semibold">Sertifikat ISO 9001</p>
+                        </div>
                     </div>
-                </div>
 
-                <div
-                    class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/certificate.jpg" alt="Sertifikat ISO 14001"
-                        class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
                     <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                        <p class="text-white text-lg font-semibold">Sertifikat ISO 14001</p>
+                        class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img src="/img/certificate.jpg" alt="Sertifikat ISO 14001"
+                            class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
+                            <p class="text-white text-lg font-semibold">Sertifikat ISO 14001</p>
+                        </div>
                     </div>
-                </div>
 
-                <div
-                    class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/certificate.jpg" alt="Sertifikat OHSAS 18001"
-                        class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
                     <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                        <p class="text-white text-lg font-semibold">Sertifikat OHSAS 18001</p>
+                        class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img src="/img/certificate.jpg" alt="Sertifikat OHSAS 18001"
+                            class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
+                            <p class="text-white text-lg font-semibold">Sertifikat OHSAS 18001</p>
+                        </div>
                     </div>
-                </div>
 
-                <div
-                    class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/certificate.jpg" alt="Sertifikat PROPER"
-                        class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
                     <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                        <p class="text-white text-lg font-semibold">Sertifikat PROPER</p>
+                        class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img src="/img/certificate.jpg" alt="Sertifikat PROPER"
+                            class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
+                            <p class="text-white text-lg font-semibold">Sertifikat PROPER</p>
+                        </div>
                     </div>
-                </div>
 
-                <div
-                    class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/certificate.jpg" alt="Sertifikat TKDN"
-                        class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
                     <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                        <p class="text-white text-lg font-semibold">Sertifikat TKDN</p>
+                        class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img src="/img/certificate.jpg" alt="Sertifikat TKDN"
+                            class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
+                            <p class="text-white text-lg font-semibold">Sertifikat TKDN</p>
+                        </div>
                     </div>
-                </div>
 
-                <div
-                    class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/certificate.jpg" alt="Sertifikat Lainnya"
-                        class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
                     <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                        <p class="text-white text-lg font-semibold">Sertifikat Lainnya</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-10">
-                <a href="{{ route('sertifikat') }}"
-                    class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
-                    <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                        </path>
-                    </svg>
-                    Sertifikat Lainnya
-                </a>
-            </div>
-        </div>
-    </div>
-
-    {{-- Artikel --}}
-    <div id="artikel" class="pt-28 pb-16 bg-gray-50">
-        <div class="w-9/12 mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Artikel Terbaru</h2>
-                <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
-                <p class="text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed">
-                    Dapatkan wawasan terbaru tentang pengelolaan limbah, teknologi ramah lingkungan, dan inovasi terbaru
-                    dari kami.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/artikel.jpg" alt="Pentingnya Pengelolaan Limbah yang Bertanggung Jawab"
-                        class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Pentingnya Pengelolaan Limbah yang Bertanggung Jawab</h3>
-                        <p class="text-gray-600 mb-4">Pelajari mengapa pengelolaan limbah yang bertanggung jawab sangat
-                            penting untuk menjaga lingkungan dan kesehatan kita.</p>
-                        <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
-                            &rarr;</a>
+                        class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img src="/img/certificate.jpg" alt="Sertifikat Lainnya"
+                            class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
+                            <p class="text-white text-lg font-semibold">Sertifikat Lainnya</p>
+                        </div>
                     </div>
                 </div>
 
-                <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/artikel.jpg" alt="Inovasi Teknologi Ramah Lingkungan"
-                        class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Inovasi Teknologi Ramah Lingkungan</h3>
-                        <p class="text-gray-600 mb-4">Temukan teknologi terbaru yang membantu mengurangi dampak lingkungan
-                            dan menciptakan masa depan yang lebih berkelanjutan.</p>
-                        <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/artikel.jpg" alt="Tips Mengurangi Sampah di Rumah" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Tips Mengurangi Sampah di Rumah</h3>
-                        <p class="text-gray-600 mb-4">Praktikkan langkah-langkah sederhana untuk mengurangi produksi sampah
-                            dan berkontribusi pada lingkungan yang lebih bersih.</p>
-                        <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
-                            &rarr;</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-10">
-                <a href="{{ route('artikel') }}"
-                    class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
-                    <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                        </path>
-                    </svg>
-                    Artikel Lainnya
-                </a>
-            </div>
-        </div>
-    </div>
-
-    {{-- Sponsor --}}
-    <div class="py-20 bg-gray-100">
-        <div class="w-full md:w-11/12 lg:w-9/12 mx-auto">
-            <!-- Section Title -->
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800">Sponsor Kami</h2>
-                <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
-                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-                    Kami didukung oleh perusahaan-perusahaan ternama yang berkomitmen untuk bekerja sama dengan kami.
-                </p>
-            </div>
-
-            <!-- Sponsor Logos -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-                <!-- Sponsor Logo 1 -->
-                <div class="flex justify-center items-center">
-                    <img src="/img/oriented.png" alt="Sponsor 1"
-                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
-                </div>
-                <!-- Sponsor Logo 2 -->
-                <div class="flex justify-center items-center">
-                    <img src="/img/environmental.png" alt="Sponsor 2"
-                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
-                </div>
-                <!-- Sponsor Logo 3 -->
-                <div class="flex justify-center items-center">
-                    <img src="/img/KMH.png" alt="Sponsor 3"
-                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
-                </div>
-                <!-- Sponsor Logo 4 -->
-                <div class="flex justify-center items-center">
-                    <img src="/img/eco-friendly.png" alt="Sponsor 4"
-                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
-                </div>
-                <!-- Sponsor Logo 5 -->
-                <div class="flex justify-center items-center">
-                    <img src="/img/telkom.png" alt="Sponsor 5"
-                        class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                <div class="text-center mt-10">
+                    <a href="{{ route('sertifikat') }}"
+                        class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                        Sertifikat Lainnya
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
 
-    {{-- Contact Us --}}
-    <div id="kontak" class="py-16 pt-28 bg-gray-50">
-        <div class="w-10/12 md:w-8/12 mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800">Hubungi Kami</h2>
-                <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
-                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-                    Jika Anda memiliki pertanyaan atau ingin mengetahui lebih lanjut tentang layanan kami, jangan ragu untuk
-                    menghubungi kami melalui formulir di bawah ini atau kunjungi lokasi kami di peta yang tersedia.
-                </p>
-            </div>
-            <div class="text-center mt-10">
-                <a href="{{ route('kontak') }}"
-                    class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
-                    <i class="fa-solid fa-phone mr-2"></i>
-                    Hubungi Kami
-                </a>
+        {{-- Artikel --}}
+        <div id="artikel" class="pt-28 pb-16 bg-gray-50">
+            <div class="w-9/12 mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Artikel Terbaru</h2>
+                    <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
+                    <p class="text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed">
+                        Dapatkan wawasan terbaru tentang pengelolaan limbah, teknologi ramah lingkungan, dan inovasi terbaru
+                        dari kami.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img src="/img/artikel.jpg" alt="Pentingnya Pengelolaan Limbah yang Bertanggung Jawab"
+                            class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Pentingnya Pengelolaan Limbah yang Bertanggung Jawab</h3>
+                            <p class="text-gray-600 mb-4">Pelajari mengapa pengelolaan limbah yang bertanggung jawab sangat
+                                penting untuk menjaga lingkungan dan kesehatan kita.</p>
+                            <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
+                                &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img src="/img/artikel.jpg" alt="Inovasi Teknologi Ramah Lingkungan"
+                            class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Inovasi Teknologi Ramah Lingkungan</h3>
+                            <p class="text-gray-600 mb-4">Temukan teknologi terbaru yang membantu mengurangi dampak lingkungan
+                                dan menciptakan masa depan yang lebih berkelanjutan.</p>
+                            <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
+                                &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img src="/img/artikel.jpg" alt="Tips Mengurangi Sampah di Rumah" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Tips Mengurangi Sampah di Rumah</h3>
+                            <p class="text-gray-600 mb-4">Praktikkan langkah-langkah sederhana untuk mengurangi produksi sampah
+                                dan berkontribusi pada lingkungan yang lebih bersih.</p>
+                            <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="{{ route('artikel') }}"
+                        class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                        Artikel Lainnya
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+
+        {{-- Sponsor --}}
+        <div class="py-20 bg-gray-100">
+            <div class="w-full md:w-11/12 lg:w-9/12 mx-auto">
+                <!-- Section Title -->
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">Sponsor Kami</h2>
+                    <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                        Kami didukung oleh perusahaan-perusahaan ternama yang berkomitmen untuk bekerja sama dengan kami.
+                    </p>
+                </div>
+
+                <!-- Sponsor Logos -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <!-- Sponsor Logo 1 -->
+                    <div class="flex justify-center items-center">
+                        <img src="/img/oriented.png" alt="Sponsor 1"
+                            class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                    </div>
+                    <!-- Sponsor Logo 2 -->
+                    <div class="flex justify-center items-center">
+                        <img src="/img/environmental.png" alt="Sponsor 2"
+                            class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                    </div>
+                    <!-- Sponsor Logo 3 -->
+                    <div class="flex justify-center items-center">
+                        <img src="/img/KMH.png" alt="Sponsor 3"
+                            class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                    </div>
+                    <!-- Sponsor Logo 4 -->
+                    <div class="flex justify-center items-center">
+                        <img src="/img/eco-friendly.png" alt="Sponsor 4"
+                            class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                    </div>
+                    <!-- Sponsor Logo 5 -->
+                    <div class="flex justify-center items-center">
+                        <img src="/img/telkom.png" alt="Sponsor 5"
+                            class="w-32 grayscale hover:grayscale-0 transition duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- Contact Us --}}
+        <div id="kontak" class="py-16 pt-28 bg-gray-50">
+            <div class="w-10/12 md:w-8/12 mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">Hubungi Kami</h2>
+                    <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                        Jika Anda memiliki pertanyaan atau ingin mengetahui lebih lanjut tentang layanan kami, jangan ragu untuk
+                        menghubungi kami melalui formulir di bawah ini atau kunjungi lokasi kami di peta yang tersedia.
+                    </p>
+                </div>
+                <div class="text-center mt-10">
+                    <a href="{{ route('kontak') }}"
+                        class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <i class="fa-solid fa-phone mr-2"></i>
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -503,121 +508,121 @@
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    });
-        // ------------------- Script Modal Card Image -------------------
-        function showFullImage(src, alt) {
-            const modal = document.getElementById('imageModal');
-            const fullImage = document.getElementById('fullImage');
-            fullImage.src = src;
-            fullImage.alt = alt;
-            modal.classList.remove('hidden');
-        }
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const swiper = new Swiper('.swiper-container', {
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            });
+            // ------------------- Script Modal Card Image -------------------
+            function showFullImage(src, alt) {
+                const modal = document.getElementById('imageModal');
+                const fullImage = document.getElementById('fullImage');
+                fullImage.src = src;
+                fullImage.alt = alt;
+                modal.classList.remove('hidden');
+            }
 
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.add('hidden');
-        }
-        // ------------------- End Script Modal Card Image -------------------
-    </script>
-    <style>
-        /* Styling untuk Pagination */
-        .swiper-pagination {
-            bottom: 20px !important;
-            /* Menyesuaikan jarak dari bawah */
-        }
+            function closeModal() {
+                const modal = document.getElementById('imageModal');
+                modal.classList.add('hidden');
+            }
+            // ------------------- End Script Modal Card Image -------------------
+        </script>
+        <style>
+            /* Styling untuk Pagination */
+            .swiper-pagination {
+                bottom: 20px !important;
+                /* Menyesuaikan jarak dari bawah */
+            }
 
-        .swiper-pagination-bullet {
-            background: rgba(255, 255, 255, 0.8);
-            /* Warna bullet yang tidak aktif */
-            width: 12px;
-            /* Lebar bullet */
-            height: 12px;
-            /* Tinggi bullet */
-            opacity: 1;
-            /* Menjadikan bullet tidak transparan */
-            border-radius: 50%;
-            /* Membuat bullet menjadi lingkaran */
-            transition: background 0.3s ease, transform 0.3s ease;
-            /* Transisi untuk efek hover */
-            transform: scale(0.8);
-            /* Ukuran awal bullet */
-        }
+            .swiper-pagination-bullet {
+                background: rgba(255, 255, 255, 0.8);
+                /* Warna bullet yang tidak aktif */
+                width: 12px;
+                /* Lebar bullet */
+                height: 12px;
+                /* Tinggi bullet */
+                opacity: 1;
+                /* Menjadikan bullet tidak transparan */
+                border-radius: 50%;
+                /* Membuat bullet menjadi lingkaran */
+                transition: background 0.3s ease, transform 0.3s ease;
+                /* Transisi untuk efek hover */
+                transform: scale(0.8);
+                /* Ukuran awal bullet */
+            }
 
-        .swiper-pagination-bullet-active {
-            background: #ffffff;
-            /* Warna bullet yang aktif */
-            transform: scale(1);
-            /* Ukuran bullet saat aktif */
-        }
+            .swiper-pagination-bullet-active {
+                background: #ffffff;
+                /* Warna bullet yang aktif */
+                transform: scale(1);
+                /* Ukuran bullet saat aktif */
+            }
 
-        /* Styling untuk Navigation Buttons */
-        .swiper-button-prev,
-        .swiper-button-next {
-            width: 50px;
-            /* Lebar tombol */
-            height: 50px;
-            /* Tinggi tombol */
-            background-color: rgba(0, 0, 0, 0.5);
-            /* Warna latar belakang tombol */
-            border-radius: 50%;
-            /* Membuat tombol menjadi bulat */
-            color: #ffffff;
-            /* Warna ikon tombol */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            /* Ukuran font untuk ikon */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            /* Shadow untuk tombol */
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            /* Transisi untuk efek hover */
-            z-index: 10;
-            /* Pastikan tombol tidak tertutup konten */
-        }
-
-        /* Styling untuk tombol navigasi saat hover */
-        .swiper-button-prev:hover,
-        .swiper-button-next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-            /* Warna latar belakang saat hover */
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-            /* Shadow saat hover */
-        }
-
-        .swiper-button-prev::after,
-        .swiper-button-next::after {
-            font-family: swiper-icons;
-            /* Menggunakan font ikon SwiperJS */
-            font-size: 24px;
-            /* Ukuran font ikon */
-        }
-
-        /* Menyembunyikan tombol navigasi pada perangkat mobile */
-        @media (max-width: 768px) {
-
+            /* Styling untuk Navigation Buttons */
             .swiper-button-prev,
             .swiper-button-next {
-                display: none;
-                /* Menyembunyikan tombol navigasi */
+                width: 50px;
+                /* Lebar tombol */
+                height: 50px;
+                /* Tinggi tombol */
+                background-color: rgba(0, 0, 0, 0.5);
+                /* Warna latar belakang tombol */
+                border-radius: 50%;
+                /* Membuat tombol menjadi bulat */
+                color: #ffffff;
+                /* Warna ikon tombol */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                /* Ukuran font untuk ikon */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                /* Shadow untuk tombol */
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+                /* Transisi untuk efek hover */
+                z-index: 10;
+                /* Pastikan tombol tidak tertutup konten */
             }
-        }
-    </style>
-@endsection
+
+            /* Styling untuk tombol navigasi saat hover */
+            .swiper-button-prev:hover,
+            .swiper-button-next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+                /* Warna latar belakang saat hover */
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+                /* Shadow saat hover */
+            }
+
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
+                font-family: swiper-icons;
+                /* Menggunakan font ikon SwiperJS */
+                font-size: 24px;
+                /* Ukuran font ikon */
+            }
+
+            /* Menyembunyikan tombol navigasi pada perangkat mobile */
+            @media (max-width: 768px) {
+
+                .swiper-button-prev,
+                .swiper-button-next {
+                    display: none;
+                    /* Menyembunyikan tombol navigasi */
+                }
+            }
+        </style>
+        @endsection
