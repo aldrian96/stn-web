@@ -37,7 +37,7 @@
                     <td class="px-6 py-4">{{++$i}}</td>
                     <td class="px-6 py-4">{{$item['title']}}</td>
                     <td class="px-6 py-4">{{$item['author']}}</td>
-                    <td class="px-6 py-4">{{ $item['created_at'] }}</td>
+                    <td class="px-6 py-4">{{ \App\Helpers\Helper::format_created_at($item['created_at']) }}</td>
                     <td class="px-6 py-4 flex justify-center">
                         <a href="{{ route('dashboard.artikel.crud.detail_artikel', ['id' => $item['id']]) }}" class="bg-indigo-600 text-white px-2 py-1 rounded-lg hover:bg-indigo-700 transition duration-300">
                             <i class="fas fa-eye"></i>

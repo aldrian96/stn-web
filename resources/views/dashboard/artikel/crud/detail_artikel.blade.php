@@ -15,7 +15,7 @@
                 <!-- Penulis -->
                 <p class="text-sm text-gray-600 mb-1"><strong>Penulis:</strong> {{ $data->author }}</p>
                 <!-- Tanggal -->
-                <p class="text-sm text-gray-600"><strong>Tanggal:</strong> {{ $data->created_at }}</p>
+                <p class="text-sm text-gray-600"><strong>Waktu:</strong> {{ \App\Helpers\Helper::format_created_at($data['created_at']) }}</p>
             </div>
         </div>
 
