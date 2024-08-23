@@ -7,13 +7,13 @@
         <div class="w-full max-w-lg bg-white rounded-lg shadow-lg p-8 mx-4 sm:mx-6 lg:mx-8">
             <h1 class="text-2xl font-bold text-gray-900 mb-6 text-center">Minta Brosur</h1>
             
-            <form method="POST" action="#">
+            <form method="POST" action={{route('request-brochure-store')}}>
                 @csrf
                 
                 <!-- Nama Depan -->
                 <div class="mb-4">
                     <label for="first_name" class="block text-gray-700 text-sm font-bold mb-2">Nama Depan:</label>
-                    <input type="text" id="first_name" name="first_name" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" placeholder="Masukkan nama depan Anda" required>
+                    <input type="text" id="f    irst_name" name="first_name" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" placeholder="Masukkan nama depan Anda" required>
                 </div>
                 
                 <!-- Nama Belakang -->
@@ -25,13 +25,13 @@
                 <!-- Alamat Email Perusahaan -->
                 <div class="mb-4">
                     <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Alamat Email Perusahaan:</label>
-                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" placeholder="Masukkan alamat email perusahaan Anda" required>
+                    <input type="email" id="email" name="company_email" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" placeholder="Masukkan alamat email perusahaan Anda" required>
                 </div>
                 
                 <!-- Nomor Telepon -->
                 <div class="mb-4">
                     <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Nomor Telepon:</label>
-                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" placeholder="Masukkan nomor telepon Anda" required>
+                    <input type="tel" id="phone" name="phone_number" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" placeholder="Masukkan nomor telepon Anda" required>
                 </div>
                 
                 <!-- Submit Button -->

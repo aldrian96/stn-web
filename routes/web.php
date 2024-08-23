@@ -21,26 +21,35 @@ Route::get('/dashboard/brosur/menu_brosur', function () {
     return view('dashboard.brosur.menu_brosur');
 })->name('dashboard.brosur.menu_brosur');
 
-// Artikel
-Route::get('/dashboard/artikel/menu_artikel', function () {
-    return view('dashboard.artikel.menu_artikel');
-})->name('dashboard.artikel.menu_artikel');
+// Define a route group with a common prefix
+Route::prefix('dashboard/artikel')->name('dashboard.artikel.')->group(function () {
 
-// Create Artikel
-Route::get('/dashboard/artikel/crud/create_artikel', function () {
-    return view('dashboard.artikel.crud.create_artikel');
-})->name('dashboard.artikel.crud.create_artikel');
+    // Route for the article menu
+    Route::get('/menu_artikel', [\App\Http\Controllers\ArticleController::class, 'index'])
+        ->name('menu_artikel');
 
-// Edit Artikel
-Route::get('/dashboard/artikel/crud/edit_artikel', function () {
-    return view('dashboard.artikel.crud.edit_artikel');
-})->name('dashboard.artikel.crud.edit_artikel');
+    Route::post("", [\App\Http\Controllers\ArticleController::class, 'store'])
+        ->name('crud.store_artikel');
 
-// Detail Artikel
-Route::get('/dashboard/artikel/crud/detail_artikel', function () {
-    return view('dashboard.artikel.crud.detail_artikel');
-})->name('dashboard.artikel.crud.detail_artikel');
+    Route::delete("", [\App\Http\Controllers\ArticleController::class, 'delete'])
+        ->name('crud.delete_artikel');
 
+    // Route for creating an article
+    Route::get('/crud/create_artikel', function () {
+        return view('dashboard.artikel.crud.create_artikel');
+    })->name('crud.create_artikel');
+
+    // Route for editing an article
+    Route::get('/crud/edit_artikel', function () {
+        return view('dashboard.artikel.crud.edit_artikel');
+    })->name('crud.edit_artikel');
+
+    // Route for article details
+    Route::get('/crud/detail_artikel/{id}', [
+        \App\Http\Controllers\ArticleController::class,
+        'show'
+    ])->name('crud.detail_artikel');
+});
 // Incernato
 Route::get('/incernato', function () {
     return view('incernato');
@@ -59,6 +68,14 @@ Route::get('/kontraktor', function () {
 Route::get('/minta-brosur', function () {
     return view('brosur');
 })->name('brosur');
+
+Route::post(
+    '/minta-brosur',
+    [
+        \App\Http\Controllers\BrochureController::class,
+        "store"
+    ]
+)->name('request-brochure-store');
 
 Route::get('/tentang-kami', function () {
     return view('about');
