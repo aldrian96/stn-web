@@ -167,16 +167,9 @@
                     <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
                     <div class="w-20 h-1 bg-green-500 mb-6"></div>
                     <p class="text-gray-600 mb-6">
-                        PT Sarana Tunas Niaga adalah perusahaan terkemuka dalam industri pengelolaan limbah dan teknologi
-                        ramah lingkungan. Kami berkomitmen untuk memberikan solusi inovatif melalui produk unggulan kami,
-                        AGIncinerator.
+                        AG Incinerator, hasil riset berkelanjutan dan dukungan berbagai pihak, dipatenkan sebagai karya anak bangsa, hadir dalam tipe beragam untuk mengurangi beban TPA, didukung masyarakat, pemerintah, dan dunia usaha dalam pengembangannya.
                     </p>
-                    <ul class="list-disc list-inside text-gray-600 mb-6">
-                        <li>Teknologi pembakaran limbah tanpa asap</li>
-                        <li>Sistem penghilang racun yang efektif</li>
-                        <li>Pemanfaatan energi panas untuk efisiensi maksimal</li>
-                        <li>Konversi residu menjadi media tanam</li>
-                    </ul>
+
                     <a href="{{ route('about') }}"
                         class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
                         <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -189,7 +182,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        <
 
     {{-- Product --}}
     <section id="produk" class="pt-28 pb-16 bg-gray-50">

@@ -51,7 +51,7 @@
                                 <img class="w-24 h-16 object-cover" src="https://via.placeholder.com/400x300?text=Sertifikat+{{ $i }}" alt="Sertifikat {{ $i }}">
                             </td> --}}
                             <td class="px-6 py-4">
-                                {{ $i }}
+                                P00{{ $i }}
                             </td>
                             <td class="px-6 py-4">
                                 Paten
