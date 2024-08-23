@@ -12,8 +12,8 @@
                 
                 <!-- Nama Depan -->
                 <div class="mb-4">
-                    <label for="first_name" class="block text-gray-700 text-sm font-bold mb-2">Nama:</label>
-                    <input type="text" id="first_name" name="first_name" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" placeholder="Masukkan nama Anda" required>
+                    <label for="first_name" class="block text-gray-700 text-sm font-bold mb-2">Nama Perusahaan:</label>
+                    <input type="text" id="first_name" name="first_name" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring focus:border-green-500" placeholder="Masukkan Nama Perusahaan Anda" required>
                 </div>
                 
                 <!-- Alamat Email Perusahaan -->

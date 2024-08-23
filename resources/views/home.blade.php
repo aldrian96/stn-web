@@ -154,7 +154,7 @@
         <div class="w-9/12 mx-auto">
             <div class="flex flex-wrap items-center">
                 <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
-                    <img src="/img/about-us.jpg" alt="About Us" class="w-full rounded-2xl" />
+                    <img src="/img/tentang-kami-home.png" alt="About Us" class="w-full rounded-2xl" />
                 </div>
                 <div class="w-full lg:w-1/2 lg:pl-12">
                     <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
@@ -175,7 +175,7 @@
                 </div>
             </div>
         </div>
-        <
+    </div>
 
     {{-- Product --}}
     <section id="produk" class="pt-28 pb-16 bg-gray-50">
@@ -195,8 +195,8 @@
                 <div
                     class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="/img/product-1.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
-                        <button onclick="showFullImage('/img/product-1.png', 'Spray Penghilang Racun')"
+                        <img src="/img/ag50.jpeg" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
+                        <button onclick="showFullImage('/img/ag50.jpeg', 'Spray Penghilang Racun')"
                             class="absolute bottom-4 right-4 bg-white bg-opacity-75 p-2 rounded-full hover:bg-opacity-100 transition duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
@@ -206,7 +206,7 @@
                         </button>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
+                        <h3 class="font-bold text-xl mb-2">Incinerator AG 50</h3>
                         <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
                         <a href="{{ route('incinerator') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                             &rarr;</a>
@@ -217,8 +217,8 @@
                 <div
                     class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="/img/product-2.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
-                        <button onclick="showFullImage('/img/product-2.png', 'Spray Penghilang Racun')"
+                        <img src="/img/ag100.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
+                        <button onclick="showFullImage('/img/ag100.png', 'Spray Penghilang Racun')"
                             class="absolute bottom-4 right-4 bg-white bg-opacity-75 p-2 rounded-full hover:bg-opacity-100 transition duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
@@ -228,7 +228,7 @@
                         </button>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
+                        <h3 class="font-bold text-xl mb-2">Incinerator AG 100</h3>
                         <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
                         <a href="{{ route('jasa') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                             &rarr;</a>
@@ -239,8 +239,8 @@
                 <div
                     class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="/img/product-3.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
-                        <button onclick="showFullImage('/img/product-3.png', 'Spray Penghilang Racun')"
+                        <img src="/img/ag300.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
+                        <button onclick="showFullImage('/img/ag300.png', 'Spray Penghilang Racun')"
                             class="absolute bottom-4 right-4 bg-white bg-opacity-75 p-2 rounded-full hover:bg-opacity-100 transition duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
@@ -250,7 +250,7 @@
                         </button>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
+                        <h3 class="font-bold text-xl mb-2">Incinerator AG 300</h3>
                         <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
                         <a href="{{ route('kontraktor') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                             &rarr;</a>

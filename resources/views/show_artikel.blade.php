@@ -35,8 +35,8 @@
                     <a href="#" class="text-blue-500 hover:text-blue-600">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="text-blue-400 hover:text-blue-500">
-                        <i class="fab fa-twitter"></i>
+                    <a href="#" class="text-red-400 hover:text-blue-500">
+                        <i class="fab fa-youtube"></i>
                     </a>
                     <a href="#" class="text-green-500 hover:text-green-600">
                         <i class="fab fa-whatsapp"></i>
