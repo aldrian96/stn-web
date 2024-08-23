@@ -173,12 +173,10 @@
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold">Tentang Kami</h3>
                 <p class="text-gray-400 text-sm">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iusto at culpa numquam veritatis! A,
-                    reprehenderit? Eos dignissimos corporis perferendis? Facere aspernatur repellendus facilis molestias
-                    unde, esse possimus doloremque repellat.
+                    AG Incinerator, hasil riset berkelanjutan dan dukungan berbagai pihak, dipatenkan sebagai karya anak bangsa, hadir dalam tipe beragam untuk mengurangi beban TPA, didukung masyarakat, pemerintah, dan dunia usaha dalam pengembangannya.
                 </p>
             </div>
-
+    
             <!-- Quick Links Section -->
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold">Quick Links</h3>
@@ -191,52 +189,63 @@
                     <li><a href="{{ route('kontak') }}" class="hover:text-blue-400">Hubungi Kami</a></li>
                 </ul>
             </div>
-
+    
             <!-- Services Section -->
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold">Produk Kami</h3>
                 <ul class="text-gray-400 text-sm space-y-2">
-                    <li><a href="#service1" class="hover:text-blue-400">Produk 1</a></li>
-                    <li><a href="#service2" class="hover:text-blue-400">Produk 2</a></li>
-                    <li><a href="#service3" class="hover:text-blue-400">Produk 3</a></li>
-                    <li><a href="#service4" class="hover:text-blue-400">Produk 4</a></li>
+                    <li><a href="{{ route('incinerator') }}" class="hover:text-blue-400">Incinerator AG 50</a></li>
+                    <li><a href="{{ route('incinerator') }}" class="hover:text-blue-400">Incinerator AG 100</a></li>
+                    <li><a href="{{ route('incinerator') }}" class="hover:text-blue-400">Incinerator AG 300</a></li>
                 </ul>
             </div>
-
+    
             <!-- Contact Info Section -->
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold">Info Kontak</h3>
                 <ul class="text-gray-400 text-sm space-y-2">
-                    <li>
-                        <i class="fas fa-map-marker-alt mr-2"></i>
-                        <span>123 Street, Jakarta, Indonesia</span>
+                    <!-- Alamat 1 -->
+                    <li class="flex items-start space-x-2">
+                        <i class="fas fa-map-marker-alt text-gray-600"></i>
+                        <span class="truncate w-full lg:w-64">Jl. Junti Girang No.131, Bojongkunci, Kec. Pameungpeuk, Kabupaten Bandung, Jawa Barat 40376</span>
                     </li>
-                    <li>
-                        <i class="fas fa-phone mr-2"></i>
-                        <span>(+62) 812 3456 7890</span>
+                    <!-- Alamat 2 -->
+                    <li class="flex items-start space-x-2">
+                        <i class="fas fa-map-marker-alt text-gray-600"></i>
+                        <span class="truncate w-full lg:w-64">Jl. Beruang III, Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat 17530</span>
                     </li>
-                    <li>
-                        <i class="fas fa-envelope mr-2"></i>
-                        <span>info@company.com</span>
+                    <!-- Telepon 1 -->
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-gray-600"></i>
+                        <span>(+62) 822-4045-8540</span>
+                    </li>
+                    <!-- Telepon 2 -->
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-gray-600"></i>
+                        <span>(+62) 811-163-382</span>
+                    </li>
+                    <!-- Email -->
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-gray-600"></i>
+                        <span class="truncate w-full lg:w-64">saranatunasniaga@gmail.com</span>
                     </li>
                 </ul>
+                <!-- Ikon Media Sosial -->
                 <div class="flex space-x-4 mt-4">
-                    <a href="#" class="fa-brands fa-linkedin-in w-6 h-6 text-white hover:text-blue-400"
-                        target="_blank"></a>
-                    <a href="#" class="fa-brands fa-facebook-f w-6 h-6 text-white hover:text-blue-400"
-                        target="_blank"></a>
-                    <a href="#" class="fa-brands fa-twitter w-6 h-6 text-white hover:text-blue-400"
-                        target="_blank"></a>
-                    <a href="#" class="fa-brands fa-instagram w-6 h-6 text-white hover:text-blue-400"
-                        target="_blank"></a>
+                    <a href="https://www.instagram.com/yourusername" class="fab fa-instagram w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="Instagram"></a>
+                    <a href="https://www.linkedin.com/company/yourcompany" class="fab fa-linkedin w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="LinkedIn"></a>
+                    <a href="https://www.facebook.com/yourcompany" class="fab fa-facebook-f w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="Facebook"></a>
+                    <a href="https://wa.me/yourphonenumber" class="fab fa-whatsapp w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="WhatsApp"></a>
+                    <a href="https://www.youtube.com/channel/yourchannel" class="fab fa-youtube w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="YouTube"></a>
                 </div>
             </div>
         </div>
-
+    
         <div class="footer-bottom mt-8 text-center text-gray-500 text-sm">
             &copy; 2024 Company Name. All rights reserved.
         </div>
     </footer>
+    
 
     <script>
         function toggleMenu() {

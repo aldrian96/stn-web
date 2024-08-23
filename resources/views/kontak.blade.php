@@ -14,6 +14,23 @@
             <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
                 Jika Anda memiliki pertanyaan atau ingin mengetahui lebih lanjut tentang layanan kami, jangan ragu untuk menghubungi kami melalui formulir di bawah ini atau kunjungi lokasi kami di peta yang tersedia.
             </p>
+                <div class="flex justify-center space-x-6 my-6">
+                    <a href="https://www.instagram.com/yourusername" target="_blank" class="text-gray-600 hover:text-gray-900">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" class="text-gray-600 hover:text-gray-900">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/yourcompany" target="_blank" class="text-gray-600 hover:text-gray-900">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank" class="text-gray-600 hover:text-gray-900">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" class="text-gray-600 hover:text-gray-900">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </div>
         </div>
 
         <!-- Form Input -->
