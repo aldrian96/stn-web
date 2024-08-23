@@ -17,32 +17,32 @@ Route::post('/logout', function () {
 })->name('logout');
 
 // Brosur
-Route::get('/dashboard/brosur/menu_brosur', function () {
+Route::get('/dashboard/brosur/menu-brosur', function () {
     return view('dashboard.brosur.menu_brosur');
 })->name('dashboard.brosur.menu_brosur');
 
 // Artikel
-Route::get('/dashboard/artikel/menu_artikel', function () {
+Route::get('/dashboard/artikel/menu-artikel', function () {
     return view('dashboard.artikel.menu_artikel');
 })->name('dashboard.artikel.menu_artikel');
 
 // Create Artikel
-Route::get('/dashboard/artikel/crud/create_artikel', function () {
+Route::get('/dashboard/artikel/crud/create-artikel', function () {
     return view('dashboard.artikel.crud.create_artikel');
 })->name('dashboard.artikel.crud.create_artikel');
 
 // Edit Artikel
-Route::get('/dashboard/artikel/crud/edit_artikel', function () {
+Route::get('/dashboard/artikel/crud/edit-artikel', function () {
     return view('dashboard.artikel.crud.edit_artikel');
 })->name('dashboard.artikel.crud.edit_artikel');
 
 // Detail Artikel Dashboard
-Route::get('/dashboard/artikel/crud/detail_artikel', function () {
+Route::get('/dashboard/artikel/crud/detail-artikel', function () {
     return view('dashboard.artikel.crud.detail_artikel');
 })->name('dashboard.artikel.crud.detail_artikel');
 
 // Detail Artikel Pembaca
-Route::get('/show_artikel', function () {
+Route::get('/show-artikel', function () {
     return view('show_artikel');
 })->name('show_artikel');
 
