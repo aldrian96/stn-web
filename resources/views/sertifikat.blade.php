@@ -24,17 +24,20 @@
                 <table class="min-w-full bg-white border border-gray-200">
                     <thead class="bg-gray-100">
                         <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            {{-- <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Gambar
+                            </th> --}}
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                No Permohonan
                             </th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                Nama Sertifikat
+                                Jenis Permohonan
                             </th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Deskripsi
                             </th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                Tanggal Diperoleh
+                                Tanggal
                             </th>
                             {{-- <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Aksi
@@ -44,11 +47,14 @@
                     <tbody class="bg-white divide-y divide-gray-200">
                         @for ($i = 1; $i <= 6; $i++)
                         <tr>
-                            <td class="px-6 py-4">
+                            {{-- <td class="px-6 py-4">
                                 <img class="w-24 h-16 object-cover" src="https://via.placeholder.com/400x300?text=Sertifikat+{{ $i }}" alt="Sertifikat {{ $i }}">
+                            </td> --}}
+                            <td class="px-6 py-4">
+                                {{ $i }}
                             </td>
                             <td class="px-6 py-4">
-                                Sertifikat {{ $i }}
+                                Paten
                             </td>
                             <td class="px-6 py-4 text-gray-600">
                                 Deskripsi singkat tentang sertifikat dan signifikansinya bagi perusahaan.
