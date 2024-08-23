@@ -7,6 +7,12 @@
     <title>@yield('title', 'Company Profile')</title>
     @vite('resources/css/app.css')
     <link rel="shortcut icon" href="/img/logo.png">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
