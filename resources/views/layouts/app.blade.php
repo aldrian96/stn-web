@@ -17,7 +17,7 @@
 
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <!-- Notification Bar -->
-    <div class="bg-green-600 text-white py-2">
+    <div class="bg-gradient-to-r from-blue-900 to-blue-400 text-white py-2">
         <div class="w-11/12 md:w-9/12 mx-auto text-center">
             <p class="text-sm md:text-base">
                 Selamat datang di Website resmi PT. Sarana Tunas Niaga
@@ -25,6 +25,7 @@
             </p>
         </div>
     </div>
+    
 
     <header class="z-50 sticky top-0 bg-white py-5">
         <nav class="w-11/12 md:w-9/12 mx-auto">
