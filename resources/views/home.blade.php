@@ -307,36 +307,6 @@
 
                 <div
                     class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/certificate.jpg" alt="Sertifikat OHSAS 18001"
-                        class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                        <p class="text-white text-lg font-semibold">Sertifikat OHSAS 18001</p>
-                    </div>
-                </div>
-
-                <div
-                    class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/certificate.jpg" alt="Sertifikat PROPER"
-                        class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                        <p class="text-white text-lg font-semibold">Sertifikat PROPER</p>
-                    </div>
-                </div>
-
-                <div
-                    class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <img src="/img/certificate.jpg" alt="Sertifikat TKDN"
-                        class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
-                    <div
-                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                        <p class="text-white text-lg font-semibold">Sertifikat TKDN</p>
-                    </div>
-                </div>
-
-                <div
-                    class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                     <img src="/img/certificate.jpg" alt="Sertifikat Lainnya"
                         class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
                     <div
