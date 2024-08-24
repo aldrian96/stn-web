@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <h3 class="font-bold text-xl mb-2 text-gray-800">{{ $item['title'] }}</h3>
-                        <p class="text-gray-600 mb-4">{{ $item['body']}}</p>
+                        <p class="text-gray-600 mb-4 line-clamp-3">{!! $item['body'] !!}</p>
                         <a href="{{ route('show_artikel', ['id' => $item['id']]) }}" class="text-blue-500 hover:text-blue-600 transition-colors duration-300 flex items-center font-semibold">
                             Baca selengkapnya
                             <i class="fas fa-arrow-right ml-2"></i>

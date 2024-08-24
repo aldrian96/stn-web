@@ -9,7 +9,7 @@
             <div class="md:flex">
                 <!-- Bagian Gambar Produk -->
                 <div class="md:w-1/2">
-                    <img src="https://via.placeholder.com/500x500" alt="Produk 1" class="w-full h-full object-cover rounded-t-lg md:rounded-t-none md:rounded-l-lg">
+                    <img src={{ URL::to('/').$data['image_preview_path'] }} alt="Produk 1" class="w-full h-full object-cover rounded-t-lg md:rounded-t-none md:rounded-l-lg">
                 </div>
                 <!-- Bagian Informasi Produk -->
                 <div class="p-6 md:w-1/2">

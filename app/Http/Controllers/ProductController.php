@@ -10,7 +10,7 @@ class ProductController extends Controller
         [
             'name' => 'AG 50',
             'description' => 'Cocok untuk Wilayah: Rumah Tangga, Villa/Kantor, Restoran',
-            'image_preview_path' => '',
+            'image_preview_path' => '/img/ag50.jpeg',
             'capacity' => [
                 'Lama Pembakaran: 5-8 jam/hari',
                 'Daya Bakar: 50 kg/jam',
@@ -30,7 +30,7 @@ class ProductController extends Controller
         [
             'name' => 'AG 100',
             'description' => 'Cocok untuk Wilayah: Rumah Tangga, Villa/Kantor, Restoran',
-            'image_preview_path' => '',
+            'image_preview_path' => '/img/ag100.png',
             'capacity' => [
                 'Lama Pembakaran: 5-8 jam/hari',
                 'Daya Bakar: 50 kg/jam',
@@ -50,7 +50,7 @@ class ProductController extends Controller
         [
             'name' => 'AG 300',
             'description' => 'Cocok untuk Wilayah: Rumah Tangga, Villa/Kantor, Restoran',
-            'image_preview_path' => '',
+            'image_preview_path' => '/img/ag300.png',
             'capacity' => [
                 'Lama Pembakaran: 5-8 jam/hari',
                 'Daya Bakar: 50 kg/jam',

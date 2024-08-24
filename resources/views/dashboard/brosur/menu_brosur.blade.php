@@ -18,7 +18,6 @@
                     <th class="px-6 py-3 text-left">No Telp</th>
                     <th class="px-6 py-3 text-left">Nama</th>
                     <th class="px-6 py-3 text-left">Email</th>
-                    <th class="px-6 py-3 text-left text-center">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,11 +29,6 @@
                     <td class="px-6 py-4">{{ $item['phone_number'] }}</td>
                     <td class="px-6 py-4">{{ $item['name'] }}</td>
                     <td class="px-6 py-4">{{ $item['company_email'] }}</td>
-                    <td class="px-6 py-4 flex justify-center">
-                        <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300">
-                            <i class="fas fa-envelope mr-2"></i> Kirim Brosur via Email
-                        </button>
-                    </td>
                 </tr>
                 @endforeach
                 <!-- Add more rows as needed -->
