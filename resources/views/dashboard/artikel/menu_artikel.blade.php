@@ -2,14 +2,20 @@
 
 @section('content')
 @if (session('message'))
-<div class="alert alert-info">
-    <h1> {{ session('message') }}</h1>
+<div class="fixed top-4 right-4 bg-blue-500 text-white p-4 rounded-md shadow-md max-w-xs w-full z-[9999]">
+    <button class="absolute top-2 right-2 text-white hover:text-gray-200" onclick="this.parentElement.style.display='none'">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+        <span class="sr-only">Close</span>
+    </button>
+    <h1>{{ session('message') }}</h1>
 </div>
 @endif
 
 <div class="bg-white rounded-lg shadow-md p-6">
     <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-bold">Permintaan Brosur</h2>
+        <h2 class="text-2xl font-bold">Manajemen Artikel</h2>
 
         <!-- Button Buat Artikel -->
         <a href="{{ route('dashboard.artikel.crud.create_artikel') }}" class="flex items-center text-white bg-blue-600 py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">

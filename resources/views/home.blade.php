@@ -3,8 +3,14 @@
 @section('title', 'PT. Sarana Tunas Niaga')
 
 @if (session('message'))
-<div class="alert alert-info">
-    <h1> {{ session('message') }}</h1>
+<div class="fixed bottom-4 right-4 bg-blue-500 text-white p-4 rounded-md shadow-md max-w-xs w-full z-50">
+    <button class="absolute top-2 right-2 text-white hover:text-gray-200" onclick="this.parentElement.style.display='none'">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+        <span class="sr-only">Close</span>
+    </button>
+    <h1>{{ session('message') }}</h1>
 </div>
 @endif
 

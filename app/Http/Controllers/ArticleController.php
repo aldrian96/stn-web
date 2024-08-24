@@ -12,7 +12,7 @@ class ArticleController extends Controller
      */
     public function index(Request $request = null, $id = 3)
     {
-        $data = Article::paginate($request->perPage ?? 10);
+        $data = Article::orderBy('created_at', 'desc')->paginate($request->perPage ?? 10);
         return response()->view('dashboard.artikel.menu_artikel', $data);
     }
     /**
@@ -20,7 +20,7 @@ class ArticleController extends Controller
      */
     public function indexDashboard(Request $request = null)
     {
-        $data = Article::paginate($request->perPage ?? 3);
+        $data = Article::orderBy('created_at', 'desc')->paginate($request->perPage ?? 6);
         return response()->view('artikel', $data);
     }
 
