@@ -41,8 +41,8 @@
             <ul class="mt-6 px-4">
                 <li class="mb-2">
                     <a href="{{ route('dashboard.brosur.menu_brosur') }}" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4 rounded-lg transition-colors duration-200 {{ request()->routeIs('dashboard.brosur.menu_brosur') ? 'bg-gray-300 text-gray-800 shadow' : '' }}">
-                        <i class="fas fa-home fa-lg mr-3"></i>
-                        <span>Dashboard</span>
+                        <i class="fa-solid fa-book mr-3"></i>
+                        <span>Brosur</span>
                     </a>
                 </li>
                 <li class="mb-2">

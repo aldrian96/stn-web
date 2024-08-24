@@ -10,10 +10,18 @@ class ArticleController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request = null)
+    public function index(Request $request = null, $id = 3)
     {
         $data = Article::paginate($request->perPage ?? 10);
         return response()->view('dashboard.artikel.menu_artikel', $data);
+    }
+    /**
+     * Display a listing of the resource.
+     */
+    public function indexDashboard(Request $request = null)
+    {
+        $data = Article::paginate($request->perPage ?? 3);
+        return response()->view('artikel', $data);
     }
 
     /**
@@ -53,6 +61,17 @@ class ArticleController extends Controller
         $data = Article::findOrFail($id);
         // Pass the article to the view
         return view('dashboard.artikel.crud.detail_artikel', ['data' => $data]);
+        // dd($id);
+    }
+    /**
+     * Display the specified resource.
+     */
+    public function showFullDetail(string $id)
+    {
+        // Find the article by ID, or fail if not found
+        $data = Article::findOrFail($id);
+        // Pass the article to the view
+        return view('show_artikel', ['data' => $data]);
         // dd($id);
     }
 

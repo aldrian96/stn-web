@@ -17,4 +17,15 @@ class Helper
         // Format the datetime
         return $carbonDate->format('Y-m-d, H:i \W\I\B');
     }
+    public static function formatToDate($date)
+    {
+        // Create a Carbon instance from the date string
+        $carbonDate = Carbon::parse($date);
+
+        // Set the timezone to WIB (Asia/Jakarta)
+        $carbonDate->setTimezone('Asia/Jakarta');
+
+        // Format the datetime
+        return $carbonDate->format('d M Y');
+    }
 }

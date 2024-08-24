@@ -17,30 +17,30 @@
             </div>
         </div>
     </div>
-    
+
     <div class="w-11/12 lg:w-9/12 mx-auto">
         <div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                @for ($i = 1; $i <= 6; $i++)
+                @foreach ($data as $item)
                 <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
-                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300?text=Artikel+{{ $i }}" alt="Artikel {{ $i }}">
+                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300?text=Artikel+{{ $item['id'] }}" alt="Artikel {{ $item['id'] }}">
                     <div class="p-6">
                         <div class="flex items-center mb-4">
                             <img class="w-10 h-10 rounded-full mr-4" src="https://via.placeholder.com/150" alt="Author avatar">
                             <div>
-                                <p class="text-gray-900 font-semibold">John Doe</p>
-                                <p class="text-gray-600 text-sm">15 Mei 2024</p>
+                                <p class="text-gray-900 font-semibold">{{ $item['author'] }}</p>
+                                <p class="text-gray-600 text-sm">{{ \App\Helpers\Helper::formatToDate($item['created_at']) }}</p>
                             </div>
                         </div>
-                        <h3 class="font-bold text-xl mb-2 text-gray-800">Judul Artikel {{ $i }}</h3>
-                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#" class="text-blue-500 hover:text-blue-600 transition-colors duration-300 flex items-center font-semibold">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">{{ $item['title'] }}</h3>
+                        <p class="text-gray-600 mb-4">{{ $item['body']}}</p>
+                        <a href="{{ route('show_artikel', ['id' => $item['id']]) }}" class="text-blue-500 hover:text-blue-600 transition-colors duration-300 flex items-center font-semibold">
                             Baca selengkapnya
                             <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
-                @endfor
+                @endforeach
             </div>
 
             <!-- Pagination -->

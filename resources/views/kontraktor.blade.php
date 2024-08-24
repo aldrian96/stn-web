@@ -34,15 +34,6 @@
                             <i class="fab fa-whatsapp mr-2"></i>Hubungi lewat WhatsApp
                         </a>
                     </div>
-                    <!-- Tombol Tambahan -->
-                    <div class="flex space-x-4 mt-4">
-                        <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300 transition-colors duration-300">
-                            <i class="fas fa-heart mr-2"></i>Tambah ke Wishlist
-                        </button>
-                        <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300">
-                            <i class="fas fa-share-alt mr-2"></i>Bagikan
-                        </button>
-                    </div>
                     <!-- Layanan yang Ditawarkan -->
                     <div class="mt-6">
                         <h2 class="text-xl font-bold mb-2">Layanan yang Ditawarkan</h2>

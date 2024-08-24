@@ -3,9 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [\App\Http\Controllers\DashboardController::class, 'index'])->name('home');
 
 Route::get('/login', function () {
     return view('login');
@@ -50,11 +48,11 @@ Route::prefix('dashboard/artikel')->name('dashboard.artikel.')->group(function (
         'show'
     ])->name('crud.detail_artikel');
 });
-// Incernato
-Route::get('/incernato', function () {
-    return view('incernato');
-})->name('incernato');
+// Detail Artikel Pembaca
+Route::get('/show-artikel/{id}', [\App\Http\Controllers\ArticleController::class, 'showFullDetail'])->name('show_artikel');
 
+// incinerator
+Route::get('/incinerator', [\App\Http\Controllers\ProductController::class, 'showIncinerator'])->name('incinerator');
 // Jasa
 Route::get('/jasa', function () {
     return view('jasa');
@@ -89,9 +87,7 @@ Route::get('/sertifikat', function () {
     return view('sertifikat');
 })->name('sertifikat');
 
-Route::get('/artikel', function () {
-    return view('artikel');
-})->name('artikel');
+Route::get('/artikel', [\App\Http\Controllers\ArticleController::class, 'indexDashboard'])->name('artikel');
 
 Route::get('/kontak', function () {
     return view('kontak');

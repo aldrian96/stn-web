@@ -2,19 +2,19 @@
 
 @section('title', 'PT. Sarana Tunas Niaga')
 
-@section('content')
 @if (session('message'))
 <div class="alert alert-info">
     <h1> {{ session('message') }}</h1>
 </div>
 @endif
 
+@section('content')
 {{-- Hero Section --}}
 <div class="swiper-container h-screen overflow-hidden relative">
     <div class="swiper-wrapper">
         <!-- Slide 1 -->
         <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-center"
-            style="background-image: url('/img/hero-stn.jpeg');">
+            style="background-image: url('/img/slide1.png');">
             <!-- Overlay Gelap -->
             <div class="absolute inset-0 bg-black opacity-60"></div>
 
@@ -33,8 +33,7 @@
                         <span class="text-white">Incinerator</span>
                     </h3>
                     <p class="font-light text-white mt-4">
-                        Bebas dari asap, emisi, dan bau dengan spray penghilang racun. Manfaatkan energi panas
-                        cerobong untuk hasil yang optimal. Ubah residu organik menjadi media tanam dan bahan campuran
+                        Solusi Sampah Masa Depan Mudah, Murah, Bersih dan Aman
                     </p>
                     <div class="flex flex-row mt-6 space-x-4">
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -48,7 +47,7 @@
 
         <!-- Slide 2 -->
         <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-end"
-            style="background-image: url('/img/company-hero.jpg');">
+            style="background-image: url('/img/slide2.png');">
             <!-- Overlay Gelap -->
             <div class="absolute inset-0 bg-black opacity-60"></div>
 
@@ -67,9 +66,7 @@
                         <span class="text-white">Incinerator</span>
                     </h3>
                     <p class="font-light text-white mt-4">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque doloremque pariatur, sequi
-                        eligendi omnis vel tempora, aspernatur est, ratione dolorum asperiores fuga inventore et
-                        laudantium suscipit recusandae sed fugiat ipsum.
+                        Tanpa BBM - Tanpa Batubara - Tanpa Gas - Tanpa Listrik Incinerator Berbasis Reaktor Air pertama di dunia
                     </p>
                     <div class="flex flex-row mt-6 space-x-4 justify-end">
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -84,7 +81,7 @@
 
         <!-- Slide 3 -->
         <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-center"
-            style="background-image: url('/img/slide-3.jpg');">
+            style="background-image: url('/img/slide3.png');">
             <!-- Overlay Gelap -->
             <div class="absolute inset-0 bg-black opacity-60"></div>
 
@@ -103,9 +100,7 @@
                         <span class="text-white">Incinerator</span>
                     </h3>
                     <p class="font-light text-white mt-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab at magni vel quis animi quasi?
-                        Molestiae sunt impedit, nulla quas vitae quasi excepturi deserunt veritatis ipsa, explicabo eos
-                        accusamus.
+                        Tanpa asap, emisi dan bau dengan spray penghilang racun Energi panas cerobong dapat dimanfaatkan Mengubah residu organik menjadi media tanam dan campuran material
                     </p>
                     <div class="flex flex-row mt-6 space-x-4">
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -119,7 +114,7 @@
 
         <!-- Slide 4 -->
         <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-end"
-            style="background-image: url('/img/about-us.jpg');">
+            style="background-image: url('/img/slide4.jpeg');">
             <!-- Overlay Gelap -->
             <div class="absolute inset-0 bg-black opacity-60"></div>
 
@@ -138,9 +133,7 @@
                         <span class="text-white">Incinerator</span>
                     </h3>
                     <p class="font-light text-white mt-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab at magni vel quis animi quasi?
-                        Molestiae sunt impedit, nulla quas vitae quasi excepturi deserunt veritatis ipsa, explicabo eos
-                        accusamus..
+                        incinerator AG 50, incinerator AG 100, incinerator AG 300
                     </p>
                     <div class="flex flex-row mt-6 space-x-4 justify-end">
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -167,22 +160,15 @@
     <div class="w-9/12 mx-auto">
         <div class="flex flex-wrap items-center">
             <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
-                <img src="/img/about-us.jpg" alt="About Us" class="w-full rounded-2xl" />
+                <img src="/img/tentang-kami-home.png" alt="About Us" class="w-full rounded-2xl" />
             </div>
             <div class="w-full lg:w-1/2 lg:pl-12">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
                 <div class="w-20 h-1 bg-green-500 mb-6"></div>
                 <p class="text-gray-600 mb-6">
-                    PT Sarana Tunas Niaga adalah perusahaan terkemuka dalam industri pengelolaan limbah dan teknologi
-                    ramah lingkungan. Kami berkomitmen untuk memberikan solusi inovatif melalui produk unggulan kami,
-                    AGIncinerator.
+                    AG Incinerator, hasil riset berkelanjutan dan dukungan berbagai pihak, dipatenkan sebagai karya anak bangsa, hadir dalam tipe beragam untuk mengurangi beban TPA, didukung masyarakat, pemerintah, dan dunia usaha dalam pengembangannya.
                 </p>
-                <ul class="list-disc list-inside text-gray-600 mb-6">
-                    <li>Teknologi pembakaran limbah tanpa asap</li>
-                    <li>Sistem penghilang racun yang efektif</li>
-                    <li>Pemanfaatan energi panas untuk efisiensi maksimal</li>
-                    <li>Konversi residu menjadi media tanam</li>
-                </ul>
+
                 <a href="{{ route('about') }}"
                     class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
                     <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -215,8 +201,8 @@
             <div
                 class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                 <div class="relative h-64 overflow-hidden">
-                    <img src="/img/product-1.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
-                    <button onclick="showFullImage('/img/product-1.png', 'Spray Penghilang Racun')"
+                    <img src="/img/ag50.jpeg" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
+                    <button onclick="showFullImage('/img/ag50.jpeg', 'Spray Penghilang Racun')"
                         class="absolute bottom-4 right-4 bg-white bg-opacity-75 p-2 rounded-full hover:bg-opacity-100 transition duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
@@ -226,9 +212,9 @@
                     </button>
                 </div>
                 <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
+                    <h3 class="font-bold text-xl mb-2">Incinerator AG 50</h3>
                     <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
-                    <a href="{{ route('incernato') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
+                    <a href="{{ route('incinerator') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                         &rarr;</a>
                 </div>
             </div>
@@ -237,8 +223,8 @@
             <div
                 class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                 <div class="relative h-64 overflow-hidden">
-                    <img src="/img/product-2.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
-                    <button onclick="showFullImage('/img/product-2.png', 'Spray Penghilang Racun')"
+                    <img src="/img/ag100.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
+                    <button onclick="showFullImage('/img/ag100.png', 'Spray Penghilang Racun')"
                         class="absolute bottom-4 right-4 bg-white bg-opacity-75 p-2 rounded-full hover:bg-opacity-100 transition duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
@@ -248,7 +234,7 @@
                     </button>
                 </div>
                 <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
+                    <h3 class="font-bold text-xl mb-2">Incinerator AG 100</h3>
                     <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
                     <a href="{{ route('jasa') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                         &rarr;</a>
@@ -259,8 +245,8 @@
             <div
                 class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                 <div class="relative h-64 overflow-hidden">
-                    <img src="/img/product-3.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
-                    <button onclick="showFullImage('/img/product-3.png', 'Spray Penghilang Racun')"
+                    <img src="/img/ag300.png" alt="Spray Penghilang Racun" class="w-full h-full object-cover">
+                    <button onclick="showFullImage('/img/ag300.png', 'Spray Penghilang Racun')"
                         class="absolute bottom-4 right-4 bg-white bg-opacity-75 p-2 rounded-full hover:bg-opacity-100 transition duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
@@ -270,7 +256,7 @@
                     </button>
                 </div>
                 <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Spray Penghilang Racun</h3>
+                    <h3 class="font-bold text-xl mb-2">Incinerator AG 300</h3>
                     <p class="text-gray-600 mb-4">Solusi efektif untuk menghilangkan emisi dan bau berbahaya.</p>
                     <a href="{{ route('kontraktor') }}" class="text-green-500 font-semibold hover:text-green-600">Pelajari lebih lanjut
                         &rarr;</a>
@@ -327,36 +313,6 @@
 
             <div
                 class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <img src="/img/certificate.jpg" alt="Sertifikat OHSAS 18001"
-                    class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
-                <div
-                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                    <p class="text-white text-lg font-semibold">Sertifikat OHSAS 18001</p>
-                </div>
-            </div>
-
-            <div
-                class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <img src="/img/certificate.jpg" alt="Sertifikat PROPER"
-                    class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
-                <div
-                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                    <p class="text-white text-lg font-semibold">Sertifikat PROPER</p>
-                </div>
-            </div>
-
-            <div
-                class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <img src="/img/certificate.jpg" alt="Sertifikat TKDN"
-                    class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
-                <div
-                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                    <p class="text-white text-lg font-semibold">Sertifikat TKDN</p>
-                </div>
-            </div>
-
-            <div
-                class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <img src="/img/certificate.jpg" alt="Sertifikat Lainnya"
                     class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
                 <div
@@ -393,43 +349,19 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            @foreach ($artikel as $artikel)
             <div
                 class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <img src="/img/artikel.jpg" alt="Pentingnya Pengelolaan Limbah yang Bertanggung Jawab"
                     class="w-full h-64 object-cover">
                 <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Pentingnya Pengelolaan Limbah yang Bertanggung Jawab</h3>
-                    <p class="text-gray-600 mb-4">Pelajari mengapa pengelolaan limbah yang bertanggung jawab sangat
-                        penting untuk menjaga lingkungan dan kesehatan kita.</p>
-                    <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
+                    <h3 class="font-bold text-xl mb-2">{{  $artikel['title'] }}</h3>
+                    <p class="text-gray-600 mb-4">{{ $artikel['body'] }}</p>
+                    <a href="{{ route('show_artikel', ['id' => $artikel['id']]) }}" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
                         &rarr;</a>
                 </div>
             </div>
-
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <img src="/img/artikel.jpg" alt="Inovasi Teknologi Ramah Lingkungan"
-                    class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Inovasi Teknologi Ramah Lingkungan</h3>
-                    <p class="text-gray-600 mb-4">Temukan teknologi terbaru yang membantu mengurangi dampak lingkungan
-                        dan menciptakan masa depan yang lebih berkelanjutan.</p>
-                    <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
-                        &rarr;</a>
-                </div>
-            </div>
-
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <img src="/img/artikel.jpg" alt="Tips Mengurangi Sampah di Rumah" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Tips Mengurangi Sampah di Rumah</h3>
-                    <p class="text-gray-600 mb-4">Praktikkan langkah-langkah sederhana untuk mengurangi produksi sampah
-                        dan berkontribusi pada lingkungan yang lebih bersih.</p>
-                    <a href="#" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
-                        &rarr;</a>
-                </div>
-            </div>
+            @endforeach
         </div>
 
         <div class="text-center mt-10">
@@ -517,6 +449,23 @@
 
 
 <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
     // ------------------- Script Modal Card Image -------------------
     function showFullImage(src, alt) {
         const modal = document.getElementById('imageModal');
