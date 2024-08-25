@@ -74,20 +74,21 @@
             <!-- Video Player Produk -->
             <div class="p-6">
                 <h2 class="text-2xl font-bold mb-4">Video Produk</h2>
-                <div class="relative w-full h-100 bg-black rounded-lg overflow-hidden">
-                    <video class="w-full h-full object-cover" controls>
-                        <source src="{{ asset('/video/video1.mp4') }}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="p-6">
-                <h2 class="text-2xl font-bold mb-4">Video Produk</h2>
-                <div class="relative w-full h-64 bg-black rounded-lg overflow-hidden">
-                    <video class="w-full h-full object-cover" controls>
-                        <source src="{{ asset('/video/video2.mp4') }}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="flex space-x-4">
+                    <!-- Video Player 1 -->
+                    <div class="relative w-1/2 h-64 bg-black rounded-lg overflow-hidden">
+                        <video class="w-full h-full object-cover" controls>
+                            <source src="{{ asset('/video/video1.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- Video Player 2 -->
+                    <div class="relative w-1/2 h-64 bg-black rounded-lg overflow-hidden">
+                        <video class="w-full h-full object-cover" controls>
+                            <source src="{{ asset('/video/video2.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
