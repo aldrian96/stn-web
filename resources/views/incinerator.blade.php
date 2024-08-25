@@ -55,8 +55,39 @@
                             <li>{{ $mat }}</li>
                             @endforeach
                         </ul>
-
                     </div>
+                </div>
+            </div>
+            <!-- Deskripsi Panjang Produk -->
+            <div class="p-6">
+                <h2 class="text-2xl font-bold mb-4">Deskripsi Produk</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Produk ini adalah salah satu inovasi terbaru kami yang dirancang dengan teknologi canggih untuk memastikan efisiensi dan performa optimal. Didesain dengan mempertimbangkan kebutuhan pelanggan, produk ini menawarkan kombinasi sempurna antara daya tahan, fungsionalitas, dan estetika yang menarik. 
+                    <br><br>
+                    Material berkualitas tinggi yang digunakan dalam pembuatan produk ini menjamin ketahanan dan keandalannya dalam jangka panjang. Dengan fitur-fitur canggih yang mudah digunakan, produk ini cocok untuk berbagai aplikasi, baik untuk keperluan industri maupun rumah tangga.
+                    <br><br>
+                    Kami juga memberikan layanan purna jual yang terbaik, termasuk garansi dan dukungan teknis yang siap membantu kapan saja. Produk ini telah melalui berbagai uji kualitas untuk memastikan bahwa Anda mendapatkan produk dengan standar tertinggi.
+                    <br><br>
+                    Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan lebih lanjut mengenai produk ini atau ingin melakukan pemesanan. Kami siap membantu Anda dengan pelayanan terbaik.
+                </p>
+            </div>
+            <!-- Video Player Produk -->
+            <div class="p-6">
+                <h2 class="text-2xl font-bold mb-4">Video Produk</h2>
+                <div class="relative w-full h-100 bg-black rounded-lg overflow-hidden">
+                    <video class="w-full h-full object-cover" controls>
+                        <source src="{{ asset('/video/video1.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="p-6">
+                <h2 class="text-2xl font-bold mb-4">Video Produk</h2>
+                <div class="relative w-full h-64 bg-black rounded-lg overflow-hidden">
+                    <video class="w-full h-full object-cover" controls>
+                        <source src="{{ asset('/video/video2.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>

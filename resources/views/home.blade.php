@@ -162,7 +162,7 @@
 </div>
 
 {{-- About Us --}}
-<div class="py-20 bg-gray-100">
+<div class="py-20 bg-gray-50">
     <div class="w-9/12 mx-auto">
         <div class="flex flex-wrap items-center">
             <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
@@ -190,7 +190,7 @@
 </div>
 
 {{-- Product --}}
-<section id="produk" class="pt-28 pb-16 bg-gray-50">
+<section id="produk" class="pt-28 pb-16 bg-gray-100">
     <div class="w-9/12 mx-auto">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Produk Kami</h2>
@@ -282,65 +282,6 @@
         </div>
     </div>
 </section>
-
-{{-- Sertifikat --}}
-<div id="sertifikat" class="pt-28 pb-16 bg-gray-100">
-    <div class="w-10/12 md:w-9/12 mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Sertifikat Kami</h2>
-            <div class="w-24 h-1 bg-green-500 mx-auto mt-2"></div>
-            <p class="text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed">
-                Kami bangga dengan berbagai sertifikat yang kami miliki sebagai bukti komitmen kami terhadap kualitas
-                dan inovasi. Sertifikat-sertifikat ini mencerminkan standar tinggi yang kami capai dalam teknologi
-                pengelolaan limbah dan solusi ramah lingkungan.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div
-                class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <img src="/img/certificate.jpg" alt="Sertifikat ISO 9001"
-                    class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
-                <div
-                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                    <p class="text-white text-lg font-semibold">Sertifikat ISO 9001</p>
-                </div>
-            </div>
-
-            <div
-                class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <img src="/img/certificate.jpg" alt="Sertifikat ISO 14001"
-                    class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
-                <div
-                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                    <p class="text-white text-lg font-semibold">Sertifikat ISO 14001</p>
-                </div>
-            </div>
-
-            <div
-                class="relative group overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <img src="/img/certificate.jpg" alt="Sertifikat Lainnya"
-                    class="w-full h-auto rounded-lg transform transition-transform duration-300 ease-in-out group-hover:scale-105" />
-                <div
-                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-60 rounded-lg transition-opacity duration-300 ease-in-out">
-                    <p class="text-white text-lg font-semibold">Sertifikat Lainnya</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center mt-10">
-            <a href="{{ route('sertifikat') }}"
-                class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-3 px-6 border border-transparent rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
-                <svg class="w-6 h-6 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                    </path>
-                </svg>
-                Sertifikat Lainnya
-            </a>
-        </div>
-    </div>
-</div>
 
 {{-- Artikel --}}
 <div id="artikel" class="pt-28 pb-16 bg-gray-50">
