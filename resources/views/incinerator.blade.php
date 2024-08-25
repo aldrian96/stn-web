@@ -77,20 +77,21 @@
                 <div class="flex space-x-4">
                     <!-- Video Player 1 -->
                     <div class="relative w-1/2 h-64 bg-black rounded-lg overflow-hidden">
-                        <video class="w-full h-full object-cover" controls>
+                        <video class="w-full h-full object-cover" controls poster="{{ asset('/thumbnail/thumbnail1.jpg') }}">
                             <source src="{{ asset('/video/video1.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <!-- Video Player 2 -->
                     <div class="relative w-1/2 h-64 bg-black rounded-lg overflow-hidden">
-                        <video class="w-full h-full object-cover" controls>
+                        <video class="w-full h-full object-cover" controls poster="{{ asset('/thumbnail/thumbnail1.jpg') }}">
                             <source src="{{ asset('/video/video2.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>
