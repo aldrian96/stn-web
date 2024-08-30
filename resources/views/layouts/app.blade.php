@@ -103,10 +103,10 @@
 
                                     <!-- Submenu Dropdown for Jasa -->
                                     <div id="submenu-jasa-menu" class="hidden md:absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left md:group-hover:block">
-                                        <a href="{{ route('jasa') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">OS. Security</a>
-                                        <a href="{{ route('jasa') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">OS. Cleaning Service</a>
-                                        <a href="{{ route('jasa') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">OS. Driver</a>
-                                        <a href="{{ route('jasa') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">OS. Special Worker</a>
+                                        <a href="{{ route('jasa', ['id' => 0]) }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">OS. Security</a>
+                                        <a href="{{ route('jasa', ['id' => 1]) }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">OS. Cleaning Service</a>
+                                        <a href="{{ route('jasa', ['id' => 2]) }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">OS. Driver</a>
+                                        <a href="{{ route('jasa', ['id' => 3]) }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">OS. Special Worker</a>
                                     </div>
                                 </div>
 
@@ -121,8 +121,8 @@
 
                                     <!-- Submenu Dropdown for Kontraktor -->
                                     <div id="submenu-kontraktor-menu" class="hidden md:absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 transform scale-y-0 group-hover/sub:opacity-100 group-hover/sub:scale-y-100 transition-all duration-300 origin-top-left md:group-hover:block">
-                                        <a href="{{ route('kontraktor') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Civil</a>
-                                        <a href="{{ route('kontraktor') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Mechanical Electrical</a>
+                                        <a href="{{ route('kontraktor', ['id' => 0]) }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Civil</a>
+                                        <a href="{{ route('kontraktor', ['id' => 1]) }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Mechanical Electrical</a>
 
                                     </div>
                                 </div>

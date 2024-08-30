@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="w-11/12 lg:w-9/12 mx-auto">
         <div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
             <div class="overflow-x-auto">
@@ -34,7 +34,7 @@
                                 Jenis Permohonan
                             </th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                Deskripsi
+                                Judul
                             </th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Tanggal
@@ -45,30 +45,72 @@
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
-                        @for ($i = 1; $i <= 6; $i++)
                         <tr>
-                            {{-- <td class="px-6 py-4">
-                                <img class="w-24 h-16 object-cover" src="https://via.placeholder.com/400x300?text=Sertifikat+{{ $i }}" alt="Sertifikat {{ $i }}">
-                            </td> --}}
                             <td class="px-6 py-4">
-                                P00{{ $i }}
+                                IDS000006302
                             </td>
                             <td class="px-6 py-4">
-                                Paten
+                                PATEN
                             </td>
                             <td class="px-6 py-4 text-gray-600">
-                                Deskripsi singkat tentang sertifikat dan signifikansinya bagi perusahaan.
+                                INSINERATOR UNTUK MEMBAKAR SAMPAH
+                                DOMESTIK DENGAN PENAMBAHAN SUSUNAN
+                                RONGGA UDARA BATA API DAN JARINGAN PIPA
+                                SIRKULASI AIR PADA PONDASI BANGUNAN
+                                INSINERATOR SEBAGAI SUMBER OKSIGEN (𝑂2)
                             </td>
                             <td class="px-6 py-4 text-sm text-gray-500">
-                                2023
+                                29 Januari 2024
                             </td>
-                            {{-- <td class="px-6 py-4">
-                                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition-colors duration-300 flex items-center">
-                                    <i class="fas fa-eye mr-2"></i>
-                                </button>
-                            </td> --}}
                         </tr>
-                        @endfor
+                        <tr>
+                            <td class="px-6 py-4">
+                                EC00201993330
+                            </td>
+                            <td class="px-6 py-4">
+                                PATEN
+                            </td>
+                            <td class="px-6 py-4 text-gray-600">
+                                MESIN PENGOLAH SAMPAH PORTABEL
+                                MULTIGUNA DENGAN TEKNIK TERMOCONTROL
+                                DAN TERMOCOPLE
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                29 Januari 2024
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">
+                                P00202211218
+                            </td>
+                            <td class="px-6 py-4">
+                                PATEN
+                            </td>
+                            <td class="px-6 py-4 text-gray-600">
+                                ALAT PEMBAKAR SAMPAH BERGERAK NON
+                                ORGANIK DENGAN TUNGKU PEMBAKARAN
+                                BEROTASI YANG DILENGKAPI NEIS BURNER DAN
+                                PENGUMPAN SAMPAH OTOMATIS
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                31 Oktober 2022
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">
+                                P00202212168
+                            </td>
+                            <td class="px-6 py-4">
+                                PATEN
+                            </td>
+                            <td class="px-6 py-4 text-gray-600">
+                                REAKTOR BIO TERMAL KONVERSI ENERGI
+                                TERBARUKAN
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                12 Oktober 2022
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

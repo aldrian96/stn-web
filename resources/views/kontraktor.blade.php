@@ -9,22 +9,14 @@
             <div class="md:flex">
                 <!-- Bagian Gambar Kontraktor -->
                 <div class="md:w-1/2">
-                    <img src="https://via.placeholder.com/500x500" alt="Kontraktor 1" class="w-full h-full object-cover rounded-t-lg md:rounded-t-none md:rounded-l-lg">
+                    <img src="/img/kontraktor.jpg" alt="Kontraktor 1" class="w-full h-full object-cover rounded-t-lg md:rounded-t-none md:rounded-l-lg">
                 </div>
                 <!-- Bagian Informasi Kontraktor -->
                 <div class="p-6 md:w-1/2">
-                    <h1 class="text-3xl font-bold mb-4">Kontraktor 1</h1>
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-gray-300"></i>
-                        <span class="ml-2 text-gray-600">(4/5 dari 30 ulasan)</span>
-                    </div>
-                    <p class="text-gray-600 mb-4">Deskripsi Kontraktor 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem enim placeat eveniet perspiciatis voluptatibus beatae dignissimos. Nostrum, odio ducimus! Itaque in fuga molestias sunt voluptatibus, iure beatae excepturi doloremque.</p>
+                    <h1 class="text-3xl font-bold mb-4">{{ $data['title'] }}</h1>
+                    <p class="text-gray-600 mb-4">{{$data['description']}}</p>
                     <div class="flex items-center justify-between mb-4">
-                        <span class="text-2xl font-bold text-red-500">Rp. 1.000.000</span>
+                        <span class="text-2xl font-bold text-red-500">{{ $data['price'] }}</span>
                         <span class="text-lg font-medium text-gray-400 line-through">Rp. 1.500.000</span>
                     </div>
                     <!-- Tombol Hubungi lewat WhatsApp -->

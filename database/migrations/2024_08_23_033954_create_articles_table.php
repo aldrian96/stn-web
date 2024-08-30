@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("title");
             $table->string("author");
+            $table->string("image_path")->nullable();
             $table->text("body");
             $table->timestamps();
         });

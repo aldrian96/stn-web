@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
@@ -21,6 +22,7 @@ class ArticleController extends Controller
     public function indexDashboard(Request $request = null)
     {
         $data = Article::orderBy('created_at', 'desc')->paginate($request->perPage ?? 6);
+
         return response()->view('artikel', $data);
     }
 
@@ -37,18 +39,34 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
+        // Validate incoming request data, including the image
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'author' => 'required|string|max:255',
+            'body' => 'required|string',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validate image
+        ]);
+
         $data = new Article();
         $data->title = $request->title;
         $data->author = $request->author;
         $data->body = $request->body;
+
+        // Check if an image is uploaded
+        if ($request->hasFile('gambar')) {
+            // Store the image and get the path
+            $imagePath = $request->file('gambar')->store('images', 'public');
+            $data->image_path = $imagePath; // Save image path to the database
+        }
+
         if ($data->save()) {
-            return redirect()->route("dashboard.artikel.menu_artikel")->with([
-                "message" => "Artikel berhasil dibuat!"
+            return redirect()->route('dashboard.artikel.menu_artikel')->with([
+                'message' => 'Artikel berhasil dibuat!',
             ]);
         }
+
         return redirect()->back()->with([
-            "message" => "Mohon maaf, terjadi kesalahan server!"
+            'message' => 'Mohon maaf, terjadi kesalahan server!',
         ]);
     }
 
@@ -60,6 +78,7 @@ class ArticleController extends Controller
         // Find the article by ID, or fail if not found
         $data = Article::findOrFail($id);
         // Pass the article to the view
+
         return view('dashboard.artikel.crud.detail_artikel', ['data' => $data]);
         // dd($id);
     }
@@ -70,7 +89,8 @@ class ArticleController extends Controller
     {
         // Find the article by ID, or fail if not found
         $data = Article::findOrFail($id);
-        // Pass the article to the view
+        // dd($data->toArray());
+
         return view('show_artikel', ['data' => $data]);
         // dd($id);
     }
@@ -104,11 +124,10 @@ class ArticleController extends Controller
     public function deleteArtikel(string $id)
     {
         $data = Article::findOrFail($id);
-        if($data->delete()){
+        if ($data->delete()) {
             return redirect()->back()->with([
                 'message' => 'berhasil menghapus artikel.'
             ]);
-            
         }
         return redirect()->back()->with([
             'message' => 'Gagal.'

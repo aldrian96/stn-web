@@ -23,7 +23,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 @foreach ($data as $item)
                 <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
-                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x300?text=Artikel+{{ $item['id'] }}" alt="Artikel {{ $item['id'] }}">
+                    <img class="w-full h-48 object-cover" src="{{ $item['image_path'] ? Storage::url($item['image_path']) : 'https://via.placeholder.com/400x300?text=Thumbnail' }}" alt="Placeholder">
                     <div class="p-6">
                         <div class="flex items-center mb-4">
                             <img class="w-10 h-10 rounded-full mr-4" src="https://via.placeholder.com/150" alt="Author avatar">

@@ -45,7 +45,7 @@
 
             <!-- Gambar Utama -->
             <div class="mb-6">
-                <img class="w-full h-auto object-cover rounded-lg" src="https://via.placeholder.com/1200x600" alt="Judul Artikel" loading="lazy">
+                <img class="w-full h-auto object-cover rounded-lg" src="{{ $data['image_path'] ? Storage::url($data['image_path']) : 'https://via.placeholder.com/1200x600' }}" alt="Judul Artikel" loading="lazy">
             </div>
 
             <!-- Konten Artikel -->

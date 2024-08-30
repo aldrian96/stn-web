@@ -9,28 +9,20 @@
             <div class="md:flex">
                 <!-- Bagian Gambar Jasa -->
                 <div class="md:w-1/2">
-                    <img src="https://via.placeholder.com/500x500" alt="Jasa 1" class="w-full h-full object-cover rounded-t-lg md:rounded-t-none md:rounded-l-lg">
+                    <img src="/img/jasa1.jpg" alt="Jasa 1" class="w-full h-full object-cover rounded-t-lg md:rounded-t-none md:rounded-l-lg">
                 </div>
                 <!-- Bagian Informasi Jasa -->
                 <div class="p-6 md:w-1/2">
-                    <h1 class="text-3xl font-bold mb-4">Jasa 1</h1>
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-yellow-500"></i>
-                        <i class="fas fa-star text-gray-300"></i>
-                        <span class="ml-2 text-gray-600">(4/5 dari 50 ulasan)</span>
-                    </div>
-                    <p class="text-gray-600 mb-4">Deskripsi Jasa 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem enim placeat eveniet perspiciatis voluptatibus beatae dignissimos. Nostrum, odio ducimus! Itaque in fuga molestias sunt voluptatibus, iure beatae excepturi doloremque.</p>
+                    <h1 class="text-3xl font-bold mb-4">{{ $data['title'] }}</h1>
+                    <p class="text-gray-600 mb-4">{{$data['description']}}</p>
                     <div class="flex items-center justify-between mb-4">
-                        <span class="text-2xl font-bold text-red-500">Rp. 500.000</span>
+                        <span class="text-2xl font-bold text-red-500">{{ $data['price'] }}</span>
                         <span class="text-lg font-medium text-gray-400 line-through">Rp. 700.000</span>
                     </div>
                     <!-- Tombol Pesan lewat WhatsApp -->
                     <div class="flex items-center justify-between mb-4">
-                        <a href="https://api.whatsapp.com/send?phone=+628123456789&text=Halo,%20saya%20tertarik%20untuk%20memesan%20Jasa%201" 
-                           class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors duration-300">
+                        <a href="https://api.whatsapp.com/send?phone=+628123456789&text=Halo,%20saya%20tertarik%20untuk%20memesan%20Jasa%201"
+                            class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors duration-300">
                             <i class="fab fa-whatsapp mr-2"></i>Pesan lewat WhatsApp
                         </a>
                     </div>

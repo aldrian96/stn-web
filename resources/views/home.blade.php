@@ -120,7 +120,7 @@
 
         <!-- Slide 4 -->
         <div class="swiper-slide bg-cover bg-center bg-no-repeat h-screen relative !flex items-center justify-end"
-            style="background-image: url('/img/slide4.jpeg');">
+            style="background-image: url('/img/slide4.jpg');">
             <!-- Overlay Gelap -->
             <div class="absolute inset-0 bg-black opacity-60"></div>
 
@@ -135,12 +135,8 @@
                         </h2>
                     </div>
                     <h3 class="font-bold uppercase text-white text-3xl mt-4">
-                        <span class="text-white">AG</span>
-                        <span class="text-white">Incinerator</span>
+                        <span class="text-white">Others</span>
                     </h3>
-                    <p class="font-light text-white mt-4">
-                        incinerator AG 50, incinerator AG 100, incinerator AG 300
-                    </p>
                     <div class="flex flex-row mt-6 space-x-4 justify-end">
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
                         <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -299,7 +295,7 @@
             @foreach ($artikel as $artikel)
             <div
                 class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <img src="/img/artikel.jpg" alt="Pentingnya Pengelolaan Limbah yang Bertanggung Jawab"
+                <img src="{{ $artikel['image_path'] ? Storage::url($artikel['image_path']) : 'https://via.placeholder.com/1200x600' }}" alt="Pentingnya Pengelolaan Limbah yang Bertanggung Jawab"
                     class="w-full h-64 object-cover">
                 <div class="p-6">
                     <h3 class="font-bold text-xl mb-2">{{  $artikel['title'] }}</h3>

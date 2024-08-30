@@ -15,59 +15,60 @@ class ArticleSeeder extends Seeder
     {
         $dummyData = [
             [
-                "title" => "Menanggulangi Sampah Plastik: Solusi dan Tantangan di Indonesia",
-                "author" => "Diana Pratiwi",
-                "body" => "Indonesia menghadapi krisis sampah plastik yang serius. Artikel ini membahas dampak lingkungan dari sampah plastik, berbagai upaya pemerintah dan masyarakat dalam mengurangi penggunaan plastik, serta tantangan yang dihadapi dalam mengelola sampah plastik."
+                "title" => "Mengurangi Sampah Plastik di Laut: Inisiatif Global dan Lokal",
+                "author" => "Andi Wijaya",
+                "body" => "Sampah plastik di laut menjadi masalah global yang memerlukan perhatian serius. Artikel ini membahas berbagai inisiatif, baik global maupun lokal, untuk mengurangi sampah plastik di laut dan dampaknya terhadap ekosistem laut."
             ],
             [
-                "title" => "Pengelolaan Sampah di Kota Besar: Studi Kasus Jakarta",
-                "author" => "Budi Santoso",
-                "body" => "Jakarta, sebagai ibu kota Indonesia, menghadapi masalah pengelolaan sampah yang kompleks. Artikel ini mengulas sistem pengelolaan sampah di Jakarta, tantangan yang dihadapi, dan inisiatif yang diterapkan untuk meningkatkan efisiensi dan keberlanjutan pengelolaan sampah."
+                "title" => "Pengelolaan Sampah Elektronik: Tantangan dan Solusi",
+                "author" => "Rina Suryani",
+                "body" => "Sampah elektronik atau e-waste menjadi masalah yang berkembang seiring dengan peningkatan penggunaan perangkat elektronik. Artikel ini mengeksplorasi tantangan dalam pengelolaan e-waste dan solusi yang dapat diterapkan untuk mengurangi dampaknya terhadap lingkungan."
             ],
             [
-                "title" => "Dampak Sampah pada Kesehatan Masyarakat: Studi Kasus di Surabaya",
-                "author" => "Sari Melati",
-                "body" => "Sampah yang menumpuk di area permukiman dapat memiliki dampak serius pada kesehatan masyarakat. Artikel ini mengeksplorasi bagaimana masalah sampah di Surabaya mempengaruhi kesehatan warga dan langkah-langkah yang diambil untuk mengatasi masalah tersebut."
+                "title" => "Mengolah Sampah Organik Menjadi Kompos: Praktik di Perkotaan",
+                "author" => "Dewi Ratnasari",
+                "body" => "Sampah organik dapat diolah menjadi kompos yang bermanfaat untuk pertanian dan penghijauan kota. Artikel ini membahas berbagai teknik pengomposan di perkotaan dan manfaatnya dalam mengurangi volume sampah yang dibuang ke TPA."
             ],
             [
-                "title" => "Inovasi Teknologi dalam Pengelolaan Sampah: Contoh dari Bandung",
-                "author" => "Arief Rachman",
-                "body" => "Bandung telah menjadi pionir dalam penggunaan teknologi untuk mengelola sampah. Artikel ini membahas berbagai inovasi yang diterapkan di Bandung, termasuk sistem pemantauan sampah berbasis teknologi dan metode pengolahan sampah yang efisien."
+                "title" => "Peran Teknologi dalam Pengelolaan Sampah: Dari Sensor hingga AI",
+                "author" => "Hari Pratama",
+                "body" => "Teknologi dapat memainkan peran penting dalam pengelolaan sampah yang lebih efisien. Artikel ini mengeksplorasi penggunaan teknologi seperti sensor dan kecerdasan buatan (AI) dalam memantau dan mengelola sampah secara real-time."
             ],
             [
-                "title" => "Pendidikan Lingkungan untuk Mengurangi Sampah: Peran Sekolah di Yogyakarta",
-                "author" => "Nina Hartati",
-                "body" => "Pendidikan lingkungan dapat memainkan peran penting dalam mengurangi jumlah sampah. Artikel ini mengulas inisiatif di sekolah-sekolah Yogyakarta yang berfokus pada pendidikan tentang pengelolaan sampah dan dampaknya terhadap lingkungan."
+                "title" => "Zero Waste Lifestyle: Mengurangi Sampah dari Rumah",
+                "author" => "Siti Nuraini",
+                "body" => "Gaya hidup Zero Waste semakin populer sebagai cara untuk mengurangi sampah dari sumbernya. Artikel ini memberikan tips praktis untuk memulai gaya hidup Zero Waste di rumah dan dampaknya terhadap lingkungan."
             ],
             [
-                "title" => "Membangun Kesadaran Publik tentang Sampah: Kampanye dan Program di Medan",
-                "author" => "Rian Nugroho",
-                "body" => "Kesadaran publik adalah kunci untuk mengatasi masalah sampah. Artikel ini mengkaji kampanye dan program yang telah diluncurkan di Medan untuk meningkatkan kesadaran masyarakat mengenai pengelolaan sampah dan pentingnya daur ulang."
+                "title" => "Ekonomi Sirkular: Cara Efektif Mengatasi Masalah Sampah",
+                "author" => "Ahmad Ramzi",
+                "body" => "Ekonomi sirkular adalah pendekatan yang dapat mengurangi sampah dengan cara mendaur ulang dan menggunakan kembali produk. Artikel ini menjelaskan konsep ekonomi sirkular dan bagaimana implementasinya dapat membantu mengatasi masalah sampah."
             ],
             [
-                "title" => "Sampah dan Pariwisata: Tantangan di Bali",
-                "author" => "Lia Cempaka",
-                "body" => "Bali sebagai destinasi wisata terkenal menghadapi tantangan besar terkait sampah. Artikel ini membahas bagaimana sampah mempengaruhi industri pariwisata di Bali dan langkah-langkah yang diambil untuk menjaga kebersihan dan keberlanjutan lingkungan."
+                "title" => "Inisiatif Komunitas dalam Mengurangi Sampah: Studi Kasus di Surabaya",
+                "author" => "Yuni Astuti",
+                "body" => "Komunitas memiliki peran penting dalam upaya pengelolaan sampah. Artikel ini menyoroti beberapa inisiatif yang telah dilakukan oleh komunitas di Surabaya untuk mengurangi sampah dan meningkatkan kesadaran lingkungan."
             ],
             [
-                "title" => "Peran Komunitas dalam Pengelolaan Sampah: Contoh dari Malang",
-                "author" => "Eka Wijaya",
-                "body" => "Komunitas lokal memiliki peran penting dalam pengelolaan sampah. Artikel ini menyoroti inisiatif komunitas di Malang yang telah berhasil mengurangi sampah melalui program-program berbasis masyarakat."
+                "title" => "Manfaat Pemilahan Sampah di Sumber: Memudahkan Proses Daur Ulang",
+                "author" => "Tono Subagyo",
+                "body" => "Memilah sampah sejak dari sumbernya merupakan langkah penting untuk mendukung proses daur ulang. Artikel ini menjelaskan manfaat dari pemilahan sampah dan bagaimana hal itu dapat dilakukan di tingkat rumah tangga dan komunitas."
             ],
             [
-                "title" => "Sampah Organik dan Komposting: Upaya di Semarang",
-                "author" => "Indah Pramudita",
-                "body" => "Sampah organik merupakan bagian besar dari total sampah yang dihasilkan. Artikel ini membahas upaya di Semarang untuk mengelola sampah organik melalui program komposting, serta manfaat dan tantangan dari metode tersebut."
+                "title" => "Dampak Sampah pada Kehidupan Satwa Liar: Kasus di Hutan Sumatra",
+                "author" => "Bambang Setiawan",
+                "body" => "Sampah yang tidak dikelola dengan baik dapat berdampak negatif pada satwa liar. Artikel ini mengulas kasus di Hutan Sumatra, di mana sampah plastik mempengaruhi kesehatan dan kehidupan satwa liar di sana."
             ],
             [
-                "title" => "Kebijakan Pemerintah dalam Pengelolaan Sampah: Evaluasi dan Rekomendasi untuk Indonesia",
-                "author" => "Fajar Ramadhan",
-                "body" => "Artikel ini mengevaluasi kebijakan pemerintah Indonesia terkait pengelolaan sampah, menganalisis keberhasilan dan kekurangan dari kebijakan tersebut, serta memberikan rekomendasi untuk perbaikan di masa depan."
+                "title" => "Pendidikan Lingkungan untuk Anak: Mengenalkan Konsep Reduce, Reuse, Recycle",
+                "author" => "Lia Handayani",
+                "body" => "Pendidikan lingkungan sejak dini penting untuk membentuk kebiasaan baik dalam mengelola sampah. Artikel ini menjelaskan pentingnya mengajarkan konsep Reduce, Reuse, Recycle kepada anak-anak dan metode yang efektif untuk melakukannya."
             ]
         ];
-                foreach ($dummyData as $value) {
+
+        foreach ($dummyData as $value) {
             $article = new Article();
-            foreach($value as $key => $val) {
+            foreach ($value as $key => $val) {
                 $article->{$key} = $val;
             }
             $article->save();
