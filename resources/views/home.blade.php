@@ -72,7 +72,8 @@
                         <span class="text-white">Incinerator</span>
                     </h3>
                     <p class="font-light text-white mt-4">
-                        Tanpa BBM - Tanpa Batubara - Tanpa Gas - Tanpa Listrik Incinerator Berbasis Reaktor Air pertama di dunia
+                        Tanpa BBM - Tanpa Batubara - Tanpa Gas - Tanpa Listrik <br>
+                        Incinerator Berbasis Reaktor Air pertama di dunia
                     </p>
                     <div class="flex flex-row mt-6 space-x-4 justify-end">
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -135,8 +136,15 @@
                         </h2>
                     </div>
                     <h3 class="font-bold uppercase text-white text-3xl mt-4">
-                        <span class="text-white">Others</span>
+                        <span class="text-white">Other Services</span>
                     </h3>
+                    <p class="font-light text-white mt-4">
+                        Security Outsourcing<br>
+                        Employee Outsourcing <br>
+                        General Contraktor <br>
+                        Procurement of goods and Services<br>
+                        Rent Car and Driver Service<br>
+                    </p>
                     <div class="flex flex-row mt-6 space-x-4 justify-end">
                         <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
                         <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
@@ -298,7 +306,7 @@
                 <img src="{{ $artikel['image_path'] ? Storage::url($artikel['image_path']) : 'https://via.placeholder.com/1200x600' }}" alt="Pentingnya Pengelolaan Limbah yang Bertanggung Jawab"
                     class="w-full h-64 object-cover">
                 <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">{{  $artikel['title'] }}</h3>
+                    <h3 class="font-bold text-xl mb-2">{{ $artikel['title'] }}</h3>
                     <p class="text-gray-600 mb-4">{{ $artikel['body'] }}</p>
                     <a href="{{ route('show_artikel', ['id' => $artikel['id']]) }}" class="text-green-500 font-semibold hover:text-green-600">Baca Selengkapnya
                         &rarr;</a>

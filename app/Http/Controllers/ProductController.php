@@ -71,7 +71,12 @@ class ProductController extends Controller
     public function showIncinerator(Request $request, $id = 0)
     {
         $data = $this->dataIncinerator[$request->id ?? $id];
-        // dd($data);
+
+        $whatsappMessage = "Halo saya tertarik membeli ". $data['name'];
+        $encodedMessage = urlencode($whatsappMessage);
+
+        $whatsappLink = "https://wa.me/628129903131?text=" . $encodedMessage;
+        $data['whatsapp_link'] = $whatsappLink;
         return view('incinerator', ['data' => $data]);
     }
 }

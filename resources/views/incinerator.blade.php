@@ -18,13 +18,9 @@
                         {{ $data['description'] }}.
                         <hr>
                     </p>
-                    <hr class="my-2">
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-2xl font-bold text-red-500">Rp. {{ $data['price'] }}</span>
-                    </div>
                     <!-- Tombol Beli lewat WhatsApp -->
-                    <div class="flex items-center justify-between mb-4">
-                        <a href="https://api.whatsapp.com/send?phone=+628123456789&text=Halo,%20saya%20tertarik%20untuk%20membeli%20Produk%201"
+                    <div class="flex items-center justify-between mb-4 mt-4">
+                        <a href={{$data['whatsapp_link']}} 
                             class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors duration-300">
                             <i class="fab fa-whatsapp mr-2"></i>Pesan lewat WhatsApp
                         </a>

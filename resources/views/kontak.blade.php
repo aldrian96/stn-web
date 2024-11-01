@@ -41,11 +41,15 @@
                     <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Masukkan nama Anda">
                 </div>
                 <div class="mb-6">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">No. Telepon:</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="+62">
+                </div>
+                <div class="mb-6">
                     <label for="email" class="block text-gray-700 font-semibold mb-2">Email:</label>
                     <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Masukkan email Anda">
                 </div>
                 <div class="mb-6">
-                    <label for="message" class="block text-gray-700 font-semibold mb-2">Pesan:</label>
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Tujuan Pemesanan:</label>
                     <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Tulis pesan Anda"></textarea>
                 </div>
                 <button type="submit" class="bg-green-500 hover:bg-green-700 w-full text-white font-bold py-3 px-6 border border-transparent rounded-full transition duration-300 ease-in-out">

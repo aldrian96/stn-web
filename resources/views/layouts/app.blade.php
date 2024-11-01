@@ -56,11 +56,11 @@
                             class="absolute bottom-0 left-0 w-full h-0.5 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 {{ Route::currentRouteName() == 'home' ? 'scale-x-100' : '' }}"></span>
                     </a>
 
-                    <a href="{{ route('about') }}"
-                        class="relative group py-2 {{ Route::currentRouteName() == 'about' ? 'text-green-600' : 'text-gray-700' }}">
-                        <span class="hover:text-green-600 transition duration-300">Tentang Kami</span>
+                    <a href="{{ route('artikel') }}"
+                        class="relative group py-2 {{ Route::currentRouteName() == 'artikel' ? 'text-green-600' : 'text-gray-700' }}">
+                        <span class="hover:text-green-600 transition duration-300">Artikel</span>
                         <span
-                            class="absolute bottom-0 left-0 w-full h-0.5 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 {{ Route::currentRouteName() == 'about' ? 'scale-x-100' : '' }}"></span>
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 {{ Route::currentRouteName() == 'artikel' ? 'scale-x-100' : '' }}"></span>
                     </a>
 
                     <!-- Dropdown Numpuk -->
@@ -140,11 +140,11 @@
                             class="absolute bottom-0 left-0 w-full h-0.5 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 {{ Route::currentRouteName() == 'sertifikat' ? 'scale-x-100' : '' }}"></span>
                     </a>
 
-                    <a href="{{ route('artikel') }}"
-                        class="relative group py-2 {{ Route::currentRouteName() == 'artikel' ? 'text-green-600' : 'text-gray-700' }}">
-                        <span class="hover:text-green-600 transition duration-300">Artikel</span>
+                    <a href="{{ route('about') }}"
+                        class="relative group py-2 {{ Route::currentRouteName() == 'about' ? 'text-green-600' : 'text-gray-700' }}">
+                        <span class="hover:text-green-600 transition duration-300">Tentang Kami</span>
                         <span
-                            class="absolute bottom-0 left-0 w-full h-0.5 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 {{ Route::currentRouteName() == 'artikel' ? 'scale-x-100' : '' }}"></span>
+                            class="absolute bottom-0 left-0 w-full h-0.5 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 {{ Route::currentRouteName() == 'about' ? 'scale-x-100' : '' }}"></span>
                     </a>
 
                     <a href="{{ route('kontak') }}"
@@ -219,12 +219,7 @@
                     <!-- Telepon 1 -->
                     <li class="flex items-center">
                         <i class="fas fa-phone mr-2 text-gray-600"></i>
-                        <span>(+62) 822-4045-8540</span>
-                    </li>
-                    <!-- Telepon 2 -->
-                    <li class="flex items-center">
-                        <i class="fas fa-phone mr-2 text-gray-600"></i>
-                        <span>(+62) 811-163-382</span>
+                        <span>(+62)812-990-3131</span>
                     </li>
                     <!-- Email -->
                     <li class="flex items-center">
@@ -237,7 +232,7 @@
                     <a href="https://www.instagram.com/yourusername" class="fab fa-instagram w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="Instagram"></a>
                     <a href="https://www.linkedin.com/company/yourcompany" class="fab fa-linkedin w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="LinkedIn"></a>
                     <a href="https://www.facebook.com/yourcompany" class="fab fa-facebook-f w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="Facebook"></a>
-                    <a href="https://wa.me/yourphonenumber" class="fab fa-whatsapp w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="WhatsApp"></a>
+                    <a href="https://wa.me/628129903131" class="fab fa-whatsapp w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="WhatsApp"></a>
                     <a href="https://www.youtube.com/channel/yourchannel" class="fab fa-youtube w-6 h-6 text-white hover:text-blue-400" target="_blank" aria-label="YouTube"></a>
                 </div>
             </div>
