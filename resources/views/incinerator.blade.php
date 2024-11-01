@@ -29,35 +29,52 @@
                             <i class="fab fa-whatsapp mr-2"></i>Pesan lewat WhatsApp
                         </a>
                     </div>
-                    <!-- Spesifikasi Produk -->
-                    <div class="mt-6">
-                        <h2 class="text-xl font-bold mb-2">Kapasitas Pembakaran</h2>
-                        <ul class="list-disc pl-4 text-gray-600">
-                            @foreach ($data['capacity'] as $spec)
-                            <li>{{ $spec }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    <!-- Spesifikasi Produk -->
-                    <div class="mt-6">
-                        <h2 class="text-xl font-bold mb-2">Spesifikasi</h2>
-                        <ul class="list-disc pl-4 text-gray-600">
-                            @foreach ($data['specification'] as $spec)
-                            <li>{{ $spec }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    <!-- Informasi Tambahan -->
-                    <div class="mt-6">
-                        <h2 class="text-xl font-bold mb-2">Garansi</h2>
-                        <ul class="list-disc pl-4 text-gray-600">
-                            @foreach ($data['additional_information'] as $mat)
-                            <li>{{ $mat }}</li>
-                            @endforeach
-                        </ul>
+
+                    <!-- Bagian Spesifikasi dalam Dua Kolom -->
+                    <div class="mt-6 md:grid md:grid-cols-2 gap-4">
+                        <!-- Kolom 1 -->
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">Kapasitas Pembakaran</h2>
+                            <ul class="list-disc pl-4 text-gray-600">
+                                @foreach ($data['capacity'] as $spec)
+                                <li>{{ $spec }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+
+                        <!-- Kolom 2 -->
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">Spesifikasi</h2>
+                            <ul class="list-disc pl-4 text-gray-600">
+                                @foreach ($data['specification'] as $spec)
+                                <li>{{ $spec }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        
+                        <!-- Kolom 1 -->
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">Garansi</h2>
+                            <ul class="list-disc pl-4 text-gray-600">
+                                @foreach ($data['additional_information'] as $info)
+                                <li>{{ $info }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+
+                        <!-- Kolom 2 -->
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">Lorem ipsum</h2>
+                            <ul class="list-disc pl-4 text-gray-600">
+                                @foreach ($data['specification'] as $spec)
+                                <li>{{ $spec }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- Deskripsi Panjang Produk -->
             <div class="p-6">
                 <h2 class="text-2xl font-bold mb-4">Deskripsi Produk</h2>
@@ -71,6 +88,7 @@
                     Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan lebih lanjut mengenai produk ini atau ingin melakukan pemesanan. Kami siap membantu Anda dengan pelayanan terbaik.
                 </p>
             </div>
+
             <!-- Video Player Produk -->
             <div class="p-6">
                 <h2 class="text-2xl font-bold mb-4">Video Produk</h2>
