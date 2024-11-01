@@ -206,7 +206,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Product Card 1 (dengan efek hover) -->
             <div
                 class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
@@ -272,6 +272,22 @@
                         &rarr;</a>
                 </div>
             </div>
+
+            <!-- Product Card 4 (dengan list terstruktur) -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <h3 class="font-bold text-xl mb-4">Special Project</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600 mb-4">
+                        <li>Incinerator sebagai kompor komersial</li>
+                        <li>Incinerator medis sesuai kebutuhan</li>
+                        <li>Incinerator sebagai pembangkit listrik</li>
+                        <li>Incinerator berjalan (di atas truk atau perahu)</li>
+                        <li>Incinerator sebagai pemanas rumah (di area pegunungan)</li>
+                        <li>Incinerator sebagai pembakar mayat (untuk kepercayaan tertentu)</li>
+                    </ul>
+                    {{-- <a href="#" class="text-green-500 font-semibold hover:text-green-600">Pelajari Lebih Lanjut &rarr;</a> --}}
+                </div>
+            </div>
         </div>
     </div>
 
@@ -286,6 +302,7 @@
         </div>
     </div>
 </section>
+
 
 {{-- Artikel --}}
 <div id="artikel" class="pt-28 pb-16 bg-gray-50">
