@@ -20,7 +20,7 @@
                     </p>
                     <!-- Tombol Beli lewat WhatsApp -->
                     <div class="flex items-center justify-between mb-4 mt-4">
-                        <a href={{$data['whatsapp_link']}} 
+                        <a href={{$data['whatsapp_link']}}
                             class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors duration-300">
                             <i class="fab fa-whatsapp mr-2"></i>Pesan lewat WhatsApp
                         </a>
@@ -29,40 +29,47 @@
                     <!-- Bagian Spesifikasi dalam Dua Kolom -->
                     <div class="mt-6 md:grid md:grid-cols-2 gap-4">
                         <!-- Kolom 1 -->
-                        <div>
-                            <h2 class="text-xl font-bold mb-2">Kapasitas Pembakaran</h2>
-                            <ul class="list-disc pl-4 text-gray-600">
-                                @foreach ($data['capacity'] as $spec)
-                                <li>{{ $spec }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-
+                        
                         <!-- Kolom 2 -->
                         <div>
                             <h2 class="text-xl font-bold mb-2">Spesifikasi</h2>
                             <ul class="list-disc pl-4 text-gray-600">
-                                @foreach ($data['specification'] as $spec)
+                                @foreach ($data['spesifikasi'] as $spec)
                                 <li>{{ $spec }}</li>
                                 @endforeach
                             </ul>
                         </div>
-                        
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">Kapasitas Pembakaran</h2>
+                            <ul class="list-disc pl-4 text-gray-600">
+                                @foreach ($data['kapasitas_pembakaran'] as $spec)
+                                <li>{{ $spec }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
                         <!-- Kolom 1 -->
+                        <!-- Kolom 2 -->
+                        <div>
+                            <h2 class="text-xl font-bold mb-2">Material</h2>
+                            <ul class="list-disc pl-4 text-gray-600">
+                                @foreach ($data['material'] as $spec)
+                                <li>{{ $spec }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
                         <div>
                             <h2 class="text-xl font-bold mb-2">Garansi</h2>
                             <ul class="list-disc pl-4 text-gray-600">
-                                @foreach ($data['additional_information'] as $info)
+                                @foreach ($data['garansi'] as $info)
                                 <li>{{ $info }}</li>
                                 @endforeach
                             </ul>
                         </div>
-
                         <!-- Kolom 2 -->
                         <div>
-                            <h2 class="text-xl font-bold mb-2">Lorem ipsum</h2>
+                            <h2 class="text-xl font-bold mb-2">Cocok Untuk Wilayah</h2>
                             <ul class="list-disc pl-4 text-gray-600">
-                                @foreach ($data['specification'] as $spec)
+                                @foreach ($data['cocok_untuk_wilayah'] as $spec)
                                 <li>{{ $spec }}</li>
                                 @endforeach
                             </ul>
